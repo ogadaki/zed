@@ -23,6 +23,7 @@
 
     var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
         <div>
+            <div class="selector"></div>
         </div>
     */});
     var template = utils.dom.createFragment(htmlTemplate);
@@ -42,6 +43,15 @@
             'borderRadius': radius,
             'borderStyle': 'solid',
             'borderColor': 'rgb(150, 150, 150)'
+        },
+        'div.selector': {
+            'position': 'absolute',
+            'left': '10%',
+            'width': '80%',
+            'top': -7,
+            'height': 14,
+            'zIndex': 0,
+            'borderColor': '#333'
         }
     };
     // Apply the css definition and prepending the custom element tag to all
@@ -129,6 +139,8 @@
 
             this.redraw();
         }
+
+        window.selector.setSelectable(this, true);
    };
 
     proto.css = style;
