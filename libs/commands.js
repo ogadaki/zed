@@ -123,7 +123,6 @@ http.get = function (url, success) {
             args = Array.prototype.slice.call(args, 2);
             args[0] = newContent;
         }
-        console.log(args);
         commands.createBlockElement.apply(null, args);
     };
 
