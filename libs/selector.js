@@ -38,7 +38,15 @@
                 this.selected = element;
                 element.classList.toggle('selected');
             }
+        },
+
+        unselect: function () {
+            if (this.selected !== undefined) {
+                this.selected.classList.toggle('selected');
+                this.selected = undefined;
+            }
         }
+
     };
 
 })();
