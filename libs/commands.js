@@ -140,7 +140,11 @@ http.get = function (url, success) {
     };
 
     commands.remove = function () {
-        if (context === 'block') {
+        var selected = document.querySelector('.selected');
+        if (selected.tagName === 'Z-LINK') {
+            var link = selected;
+            link.begin.port.unplug();
+        } else if (context === 'block') {
             var block = document.querySelector('z-block.current');
             offsetCurrentBlock(1);
             block.unplug();
