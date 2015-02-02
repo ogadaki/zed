@@ -109,9 +109,6 @@
         unplug: {value: function () {
             this.links.forEach(function (link) {
                 link.unconnect();
-                if (link.parentNode !== null) {
-                    link.parentNode.removeChild(link);
-                }
             });
         }},
 

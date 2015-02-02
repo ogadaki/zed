@@ -117,6 +117,9 @@
     var unconnect = function (zlink) {
         zlink.begin.port.links = _.without(zlink.begin.port.links, zlink);
         zlink.end.port.links = _.without(zlink.end.port.links, zlink);
+        if (zlink.parentNode !== null) {
+            zlink.parentNode.removeChild(zlink);
+        }
     };
 
     var proto = Object.create(HTMLElement.prototype);

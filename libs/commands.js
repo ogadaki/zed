@@ -141,9 +141,9 @@ http.get = function (url, success) {
 
     commands.remove = function () {
         var selected = document.querySelector('.selected');
-        if (selected.tagName === 'Z-LINK') {
+        if (selected !== null && selected.tagName === 'Z-LINK') {
             var link = selected;
-            link.begin.port.unplug();
+            link.unconnect();
         } else if (context === 'block') {
             var block = document.querySelector('z-block.current');
             offsetCurrentBlock(1);
