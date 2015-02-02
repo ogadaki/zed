@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>zed</title>
+
+        <meta http-equiv="content-language" content="en-US">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <script src="externals/restyle.max.js"></script>
+        <script src="externals/document-register-element.max.js"></script>
+        <script src="externals/draggabilly-modified.js"></script>
+        <script src="externals/getStyleProperty.js"></script>
+        <script src="externals/mousetrap.js"></script>
+        <script src="externals/termlib.js"></script>
+        <script src="externals/termlib_parser.js"></script>
+        <script src="externals/polyfills/repeat.js"></script>
+        <script src="externals/lodash.js"></script>
+
+        <script src="libs/utils.js"></script>
+        <script src="libs/selector.js"></script>
+        <script src="libs/engine.js"></script>
+
+        <script src="webcomponents/z-link.js"></script>
+        <script src="webcomponents/z-port.js"></script>
+        <script src="webcomponents/z-block.js"></script>
+
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            script, tt {
+                font-family: Consolas, monospace;
+                font-size: 12px;
+            }
+            z-block.current.cursor-displayed > div {
+                border-left-color: #ccf;
+            }
+            z-block * z-port.current {
+                background: #444;
+            }
+            z-port.selected {
+                background: red;
+            }
+            z-port.to-link-to {
+                background: #aca;
+            }
+            #button-bar {
+                padding: 5px;
+                background: #444;
+                color: #bbb;
+            }
+            button {
+                background: #444;
+                padding: 3px;
+                color: #ddd;
+                border: 0px;
+            }
+            .prompt {
+                color: #888;
+            }
+            .command-line {
+                font-family: Consolas, monospace;
+                font-size: 12px;
+                background: #f0f0f0;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .command-line.focused {
+                color: #aaa;
+            }
+            #patch {
+                position: relative;
+            }
+            #help {
+                margin-left: 10px;
+            }
+            #help-content {
+                font-size: smaller;
+                background: #eee;
+                padding: 15px;
+                color: #444;
+            }
+            #help-content tt {
+                color: black;
+                font-size: larger;
+                margin-right: 10px;
+            }
+            #help-bar {
+                padding: 5px;
+                background: #444;
+                color: #fff;
+                height: 23px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div style="float: left; width: 70%">
+                <div id="button-bar">
+                    <button onclick="window.commands.remove()" onfocus="this.blur()">remove</button>
+                    |
+                    <button onclick="window.commands.addButton()" onfocus="this.blur()">button</button>
+                    <button onclick="window.commands.addScript()" onfocus="this.blur()">script</button>
+                    <button onclick="window.commands.addText()" onfocus="this.blur()">text</button>
+                    <button onclick="window.commands.addNumber()" onfocus="this.blur()">number</button>
+                    |
+                    <button onclick="window.commands.edit()" onfocus="this.blur()">edit current block</button>
+                    |
+                    <button onclick="window.commands.goToCommandLine()" onfocus="this.blur()">command line</button>
+                    <!--<button onclick="window.commands.block()">block</button>-->
+                    <!--<button onclick="window.commands.port('input')">inputs</button>-->
+                    <!--<button onclick="window.commands.port('output')">outputs</button>-->
+                </div>
+
+                <div style='background:#f0f0f0;padding:15px;'>
+                    <div id="patch" style='width500px;height:400px'>
+                        <z-block id="button-a" class="draggable current" style="top:0px;left:0px">
+                            <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>go</button>
+                            <z-port id="p1" class="output"></z-port>
+                        </z-block>
+                        <z-block id="script-a" style="top:70px;left:0px">
+                            <z-port id="p1" class="input"></z-port>
+                            <!-- FIX ME if the output port is put after the script it
+                            is not inserted at the right place in the block -->
+                            <z-port id="p2" class="output"></z-port>
+                            <script
+                                class="ze-content"
+                                type="application/x-prevent-script-execution-onload"
+                                style="display: block;"
+                                contenteditable
+                                oninput="compileScript(this)">return 'zed is ' + 2*in1;</script>
+                        </z-block>
+                        <z-block id="text-a" style="top:0px;left:100px">
+                            <span class="ze-content zed-number">21</span>
+                            <z-port id="p1" class="output"></z-port>
+                        </z-block>
+                        <z-block id="text-b" style="top:130px;left:0px">
+                            <z-port id="p1" class="input"></z-port>
+                            <span class="ze-content">empty</span>
+                        </z-block>
+                        <z-link
+                            begin="#button-a z-port#p1"
+                            end="#script-a z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#text-a z-port#p1"
+                            end="#script-a z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#script-a z-port#p2"
+                            end="#text-b z-port#p1">
+                        </z-link>
+                    </div>
+                </div>
+
+                <div id="termDiv" class="command-line" style='background:#f0f0f0;padding:10px;margin-top:10px;'></div>
+            </div>
+
+            <div id="help" style="float: left; width: 20%;">
+                <div id="help-bar">Keyboard shortcuts</div>
+                <div id="help-content">
+
+                    <p>
+                        <tt>j, k</tt> Move around.
+                    </p>
+                    <p>
+                        <tt>r</tt> Remove current block or port.
+                    </p>
+                    <p>
+                        <tt>g</tt> Go to block. The key for each block is then displayed in the block. Just type the key of the block you want to select.
+                    </p>
+                    <p>
+                        <tt>l</tt> Add a link between two ports. The key for each port is displayed next to it. Just type the keys for the two ports you want to link.
+                    </p>
+                    <br/>
+                    <p>
+                    Adding a new block just below the current block:
+                    </p>
+                    <p>
+                        <tt>a h b</tt> Add a button block.
+                    </p>
+                    <p>
+                        <tt>a h t</tt> Add a text block.
+                    </p>
+                    <p>
+                        <tt>a h n</tt> Add a number block.
+                    </p>
+                    <p>
+                        <tt>a h s</tt> Add a script block.
+                    </p>
+                    <br/>
+                    <p>
+                        <tt>e</tt> Edit content of the current block (except for button blocks). When you're done type <tt style="margin-right:0px;">Esc</tt> to leave editing.
+                    </p>
+                    <p>
+                    <tt>c</tt> Go to the command line. While in the command line type <tt style="margin-right:0px;">Esc</tt> to leave it and go back to normal mode.
+                    </p>
+                    <p>
+                        <tt>space</tt> Fire the current block, i.e. execute and/or send event to its output.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="libs/commands.js"></script>
+</html>
