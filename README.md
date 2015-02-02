@@ -7,3 +7,6 @@ Check the [demo](http://nnodot.github.io/zed/app.html).
 
 It is a proof of concept, numerous features are missing, some are buggy, others
 will be removed, etc.
+
+# License
+Mozilla Public License, version 2.0
