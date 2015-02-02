@@ -14,6 +14,7 @@
 
     var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
         <span class="port-key">a</span>
+        <div class="selector"></div>
     */});
     var template = utils.dom.createFragment(htmlTemplate);
 
@@ -26,7 +27,8 @@
             'background': '#ddd',
             'display': 'inline-block',
             'position': 'relative',
-            'overflow': 'visible'
+            'overflow': 'visible',
+            'zIndex': '5'
         },
         '.port-key': {
             'font-size': '0.7em',
@@ -36,6 +38,13 @@
             'padding-right': 3,
             'zIndex': '10',
             'background': '#fff'
+        },
+        '.selector': {
+            'position': 'absolute',
+            'left': -8,
+            'top': -8,
+            'width': 24,
+            'height': 14
         }
     };
     // Apply the css definition and prepending the custom element tag to all
