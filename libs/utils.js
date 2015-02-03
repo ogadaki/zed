@@ -60,6 +60,12 @@
                         element,
                         content.nextSibling
                 );
+                // TODO move this elsewhere.
+                if (element.onclick === null) {
+                    element.onclick = function () {
+                        window.commands.editBlock(source);
+                    };
+                }
             }
             content.parentNode.removeChild(content);
         },
@@ -83,6 +89,11 @@
                 x: rect.left - relativeRect.left,
                 y: rect.top - relativeRect.top
             };
+        },
+
+        getSelectionStart: function () {
+            var node = document.getSelection().anchorNode;
+            return (node.nodeType == 3 ? node.parentNode : node);
         }
 
     };

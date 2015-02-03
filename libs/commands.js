@@ -254,14 +254,18 @@ http.get = function (url, success) {
         termDiv.classList.toggle('focused');
     };
 
+    commands.editBlock = function (block) {
+        if (block.content.tagName !== 'BUTTON') {
+            Mousetrap.reset();
+            Mousetrap.bind('esc', commands.escape);
+            block.content.focus();
+        }
+    };
+
     commands.edit = function () {
         if (context === 'block') {
             var block = document.querySelector('z-block.current');
-            if (block.content.tagName !== 'BUTTON') {
-                Mousetrap.reset();
-                Mousetrap.bind('esc', commands.escape);
-                block.content.focus();
-            }
+            commands.editBlock(block);
         }
     };
 
@@ -325,8 +329,8 @@ http.get = function (url, success) {
 
     commands.escape = function () {
         if (context === 'block') {
-            var block = document.querySelector('z-block.current');
-            block.content.blur();
+            var currentltEditingElement = utils.dom.getSelectionStart();
+            currentltEditingElement.blur();
             bindKeysForMainMode();
         }
     };
