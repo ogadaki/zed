@@ -220,6 +220,8 @@
 
     // TODO clean globals
     window.getElementBlock = function (element) {
+        // TODO do a search to find the first parent block for cases where
+        // element is dwon in the element hiearchy.
         return element.parentNode.parentNode.parentNode;
     };
 })();
