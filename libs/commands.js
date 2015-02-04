@@ -197,12 +197,23 @@ http.get = function (url, success) {
         } catch(e) {}
     };
 
+    var startBlinking = function () {
+        var block = document.querySelector('z-block.current');
+        block.classList.toggle('stop-blinking');
+    };
+
+    var stopBlinking = function () {
+        var block = document.querySelector('z-block.current');
+        block.classList.toggle('stop-blinking');
+    };
+
     var goOutOfCommandLine = function () {
         TermGlobals.keylock = true;
         TermGlobals.activeTerm.cursorOff();
         bindKeysForMainMode();
         var termDiv = document.querySelector('#termDiv');
         termDiv.classList.toggle('focused');
+        startBlinking();
     };
 
     var ctrlHandler = function () {
@@ -256,6 +267,7 @@ http.get = function (url, success) {
         TermGlobals.activeTerm.cursorOn();
         var termDiv = document.querySelector('#termDiv');
         termDiv.classList.toggle('focused');
+        stopBlinking();
     };
 
     commands.editBlock = function (block) {
@@ -268,6 +280,7 @@ http.get = function (url, success) {
         if (context === 'block') {
             var block = document.querySelector('z-block.current');
             commands.editBlock(block);
+            stopBlinking();
             // Prevent default when this function is used with Moustrap.
             return false;
         }
@@ -336,6 +349,7 @@ http.get = function (url, success) {
             var currentlyEditingElement = utils.dom.getSelectionStart();
             if (currentlyEditingElement !== null) {
                 currentlyEditingElement.blur();
+                startBlinking();
             }
             bindKeysForMainMode();
         }

@@ -37,6 +37,9 @@
             z-block.current.cursor-displayed > div {
                 border-left-color: #e66;
             }
+            z-block.current.cursor-displayed.stop-blinking > div {
+                border-left-color: #faa;
+            }
             z-block.current > div {
                 border-left-color: #faa;
             }
@@ -130,7 +133,7 @@
 
                 <div style='background:#f0f0f0;padding:15px;'>
                     <div id="patch" style='width500px;height:400px' onclick="window.selector.unselect()">
-                        <z-block id="button-a" class="draggable current" style="top:0px;left:0px">
+                        <z-block id="button-a" class="draggable current stop-blinking" style="top:0px;left:0px">
                             <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>go</button>
                             <z-port id="p1" class="output"></z-port>
                         </z-block>
