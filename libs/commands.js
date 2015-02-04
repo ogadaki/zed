@@ -256,17 +256,16 @@ http.get = function (url, success) {
     };
 
     commands.editBlock = function (block) {
-        if (block.content.tagName !== 'BUTTON') {
-            Mousetrap.reset();
-            Mousetrap.bind('esc', commands.escape);
-            block.content.focus();
-        }
+        Mousetrap.reset();
+        Mousetrap.bind('esc', commands.escape);
+        block.content.focus();
     };
 
     commands.edit = function () {
         if (context === 'block') {
             var block = document.querySelector('z-block.current');
             commands.editBlock(block);
+            return false;
         }
     };
 
@@ -330,8 +329,10 @@ http.get = function (url, success) {
 
     commands.escape = function () {
         if (context === 'block') {
-            var currentltEditingElement = utils.dom.getSelectionStart();
-            currentltEditingElement.blur();
+            var currentlyEditingElement = utils.dom.getSelectionStart();
+            if (currentlyEditingElement !== null) {
+                currentlyEditingElement.blur();
+            }
             bindKeysForMainMode();
         }
     };

@@ -93,7 +93,7 @@
 
         getSelectionStart: function () {
             var node = document.getSelection().anchorNode;
-            return (node.nodeType == 3 ? node.parentNode : node);
+            return ( (node !== null && node.nodeType === 3) ? node.parentNode : node );
         }
 
     };
