@@ -49,6 +49,7 @@ http.get = function (url, success) {
             }
         }
     };
+    window.setCurrentBlock = setCurrentBlock;
 
     // TODO 'context' or 'mode'?
     var context = 'block';

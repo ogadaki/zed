@@ -166,6 +166,11 @@
         });
 
         this.content = this.querySelector('.ze-content');
+
+        // TODO move elsewhere
+        this.onclick = function () {
+            window.setCurrentBlock(that);
+        };
     };
 
     proto.attachedCallback = function() {
