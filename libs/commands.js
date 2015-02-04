@@ -248,6 +248,9 @@ http.get = function (url, success) {
     var res = term.open();
 
     commands.goToCommandLine = function () {
+        if (TermGlobals.keylock === false) {
+            return;
+        }
         TermGlobals.keylock = false;
         Mousetrap.reset();
         TermGlobals.activeTerm.cursorOn();
