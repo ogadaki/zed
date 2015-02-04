@@ -32,7 +32,7 @@
         },
         '.port-key': {
             'font-size': '0.7em',
-            'color': '#aaa',
+            'color': '#444',
             'position': 'absolute',
             'padding-left': 3,
             'padding-right': 3,

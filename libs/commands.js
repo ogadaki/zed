@@ -199,12 +199,16 @@ http.get = function (url, success) {
 
     var startBlinking = function () {
         var block = document.querySelector('z-block.current');
-        block.classList.toggle('stop-blinking');
+        if (block.classList.contains('stop-blinking')) {
+            block.classList.toggle('stop-blinking');
+        }
     };
 
     var stopBlinking = function () {
         var block = document.querySelector('z-block.current');
-        block.classList.toggle('stop-blinking');
+        if (!block.classList.contains('stop-blinking')) {
+            block.classList.toggle('stop-blinking');
+        }
     };
 
     var goOutOfCommandLine = function () {
