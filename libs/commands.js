@@ -265,6 +265,7 @@ http.get = function (url, success) {
         if (context === 'block') {
             var block = document.querySelector('z-block.current');
             commands.editBlock(block);
+            // Prevent default when this function is used with Moustrap.
             return false;
         }
     };
