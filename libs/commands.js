@@ -287,7 +287,7 @@ http.get = function (url, success) {
             term.write('Press Esc to leave the command line and go back to normal mode.');
             term.newLine();
             term.newLine();
-            term.write('Commands: next, prev, remove and add.');
+            term.write('Commands: next, prev, remove, add and set content.');
         } else if (subject === 'add') {
             term.write('Add a new block just below the current block.');
             term.newLine();
@@ -418,6 +418,15 @@ http.get = function (url, success) {
             index++;
         });
         Mousetrap.bind('esc', bindKeysForMainMode);
+    };
+
+    commands.set = function (target, value) {
+        if (target === 'content') {
+            if (context === 'block') {
+                var block = document.querySelector('z-block.current');
+                block.content.innerHTML = value;
+            }
+        }
     };
 
     // Set a new stopCallback for Moustrap to avoid stopping when we start
