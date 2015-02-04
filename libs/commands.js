@@ -12,17 +12,6 @@
 /*global Mousetrap */
 
 
-// TODO 0 move
-var http = {};
-http.get = function (url, success) {
-  var request = new XMLHttpRequest();
-  request.onload = function (e) {
-    success(JSON.parse(request.responseText));
-  };
-  request.open("get", url, true);
-  request.send();
-};
-
 (function(){
     'use strict';
     // Keyboard shortcuts.
@@ -473,5 +462,16 @@ http.get = function (url, success) {
 
     bindKeysForMainMode();
     goOutOfCommandLine();
+
+    var http = {};
+    window.http = http;
+    http.get = function (url, success) {
+      var request = new XMLHttpRequest();
+      request.onload = function (e) {
+        success(JSON.parse(request.responseText));
+      };
+      request.open("get", url, true);
+      request.send();
+    };
 
 })();

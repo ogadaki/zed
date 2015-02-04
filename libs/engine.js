@@ -11,7 +11,7 @@
     var compileScript = function (element) {
         var script = element.text;
         try {
-            var theScript = new Function('in1', 'out1', 'dest1', script);
+            var theScript = new Function('in1', 'sendToOutput', 'dest1', script);
             element.compiledScript = theScript;
         } catch (e) {
             element.compiledScript = null;
