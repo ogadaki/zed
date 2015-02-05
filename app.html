@@ -132,12 +132,24 @@
                 </div>
 
                 <div style='background:#f0f0f0;padding:15px;'>
-                    <div id="patch" style='width500px;height:400px' onclick="window.selector.unselect()">
-                        <z-block id="button-a" style="top:0px;left:0px">
-                            <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>go</button>
+                    <div id="patch" style='width500px;height:500px' onclick="window.selector.unselect()">
+                        <z-block id="button-l" class="current stop-blinking" style="top:0px;left:270px">
+                            <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>load video</button>
                             <z-port id="p1" class="output"></z-port>
                         </z-block>
-                        <z-block id="script-a" class="current stop-blinking" style="top:70px;left:0px">
+                        <z-block id="button-p" style="top:280px;left:310px">
+                            <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>play</button>
+                            <z-port id="p1" class="output"></z-port>
+                        </z-block>
+                        <z-block id="button-s" style="top:250px;left:440px">
+                            <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>pause</button>
+                            <z-port id="p1" class="output"></z-port>
+                        </z-block>
+                        <z-block id="button-r" style="top:170px;left:0px">
+                            <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>go to random position</button>
+                            <z-port id="p1" class="output"></z-port>
+                        </z-block>
+                        <z-block id="script-u" style="top:60px;left:270px">
                             <z-port id="p1" class="input"></z-port>
                             <!-- FIX ME if the output port is put after the script it
                             is not inserted at the right place in the block -->
@@ -147,27 +159,100 @@
                                 type="application/x-prevent-script-execution-onload"
                                 style="display: block;"
                                 contenteditable
-                                oninput="compileScript(this)">return 'zed is ' + 2*in1;</script>
+                                oninput="compileScript(this)">dest1.src = in1;</script>
                         </z-block>
-                        <z-block id="text-a" style="top:0px;left:100px">
-                            <span class="ze-content zed-number" contenteditable>21</span>
+                        <z-block id="script-p" style="top:340px;left:270px">
+                            <z-port id="p1" class="input"></z-port>
+                            <!-- FIX ME if the output port is put after the script it
+                            is not inserted at the right place in the block -->
+                            <z-port id="p2" class="output"></z-port>
+                            <script
+                                class="ze-content"
+                                type="application/x-prevent-script-execution-onload"
+                                style="display: block;"
+                                contenteditable
+                                oninput="compileScript(this)">in1.play();</script>
+                        </z-block>
+                        <z-block id="script-s" style="top:310px;left:440px">
+                            <z-port id="p1" class="input"></z-port>
+                            <!-- FIX ME if the output port is put after the script it
+                            is not inserted at the right place in the block -->
+                            <z-port id="p2" class="output"></z-port>
+                            <script
+                                class="ze-content"
+                                type="application/x-prevent-script-execution-onload"
+                                style="display: block;"
+                                contenteditable
+                                oninput="compileScript(this)">in1.pause();</script>
+                        </z-block>
+                        <z-block id="script-r" style="top:250px;left:0px">
+                            <z-port id="p1" class="input"></z-port>
+                            <!-- FIX ME if the output port is put after the script it
+                            is not inserted at the right place in the block -->
+                            <z-port id="p2" class="output"></z-port>
+                            <script
+                                class="ze-content"
+                                type="application/x-prevent-script-execution-onload"
+                                style="display: block;white-space: pre-wrap;"
+                                contenteditable
+                                oninput="compileScript(this)">var video = in1;
+var max = video.duration;
+var newTime = Math.random()*max;
+video.currentTime = newTime;
+return newTime.toFixed(1);</script>
+                        </z-block>
+                        <z-block id="text-a" style="top:360px;left:0px">
+                            <z-port id="p1" class="input"></z-port>
+                            Moved to <span class="ze-content" contenteditable>?</span> s
+                        </z-block>
+                        <z-block id="input-u" style="top:0px;left:390px">
+                            URL: <input class="ze-content" value="http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4"></input>
                             <z-port id="p1" class="output"></z-port>
                         </z-block>
-                        <z-block id="text-b" style="top:130px;left:0px">
+                        <z-block id="video-a" style="top:110px;left:270px">
                             <z-port id="p1" class="input"></z-port>
-                            <span class="ze-content" contenteditable>empty</span>
+                            <video class="ze-content" style="width:150px;height:85px"></video>
+                            <z-port id="p2" class="output"></z-port>
                         </z-block>
                         <z-link
-                            begin="#button-a z-port#p1"
-                            end="#script-a z-port#p1">
+                            begin="#button-p z-port#p1"
+                            end="#script-p z-port#p1">
                         </z-link>
                         <z-link
-                            begin="#text-a z-port#p1"
-                            end="#script-a z-port#p1">
+                            begin="#button-s z-port#p1"
+                            end="#script-s z-port#p1">
                         </z-link>
                         <z-link
-                            begin="#script-a z-port#p2"
-                            end="#text-b z-port#p1">
+                            begin="#button-r z-port#p1"
+                            end="#script-r z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#button-l z-port#p1"
+                            end="#script-u z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#input-u z-port#p1"
+                            end="#script-u z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#script-u z-port#p2"
+                            end="#video-a z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#video-a z-port#p2"
+                            end="#script-r z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#video-a z-port#p2"
+                            end="#script-p z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#video-a z-port#p2"
+                            end="#script-s z-port#p1">
+                        </z-link>
+                        <z-link
+                            begin="#script-r z-port#p2"
+                            end="#text-a z-port#p1">
                         </z-link>
                     </div>
                 </div>
