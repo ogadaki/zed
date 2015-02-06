@@ -132,8 +132,8 @@
                 </div>
 
                 <div style='background:#f0f0f0;padding:15px;'>
-                    <div id="patch" style='width500px;height:500px' onclick="window.selector.unselect()">
-                        <z-block id="button-l" class="current stop-blinking" style="top:0px;left:270px">
+                    <div id="patch" style='width500px;height:410px' onclick="window.selector.unselect()">
+                        <z-block id="button-l" class="current stop-blinking" style="top:0px;left:0px">
                             <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>load video</button>
                             <z-port id="p1" class="output"></z-port>
                         </z-block>
@@ -149,7 +149,7 @@
                             <button class="ze-content" onclick="sendEventToOutputPort(this)" contenteditable>go to random position</button>
                             <z-port id="p1" class="output"></z-port>
                         </z-block>
-                        <z-block id="script-u" style="top:60px;left:270px">
+                        <z-block id="script-u" style="top:60px;left:110px">
                             <z-port id="p1" class="input"></z-port>
                             <!-- FIX ME if the output port is put after the script it
                             is not inserted at the right place in the block -->
@@ -203,10 +203,10 @@ return newTime.toFixed(1);</script>
                         </z-block>
                         <z-block id="text-a" style="top:360px;left:0px">
                             <z-port id="p1" class="input"></z-port>
-                            Moved to <span class="ze-content" contenteditable>?</span> s
+                            Moved to <span class="ze-content" contenteditable>0</span> s
                         </z-block>
-                        <z-block id="input-u" style="top:0px;left:390px">
-                            URL: <input class="ze-content" value="http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4"></input>
+                        <z-block id="input-u" style="top:0px;left:110px">
+                            URL: <input class="ze-content" size="50" value="http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4"></input>
                             <z-port id="p1" class="output"></z-port>
                         </z-block>
                         <z-block id="video-a" style="top:110px;left:270px">
