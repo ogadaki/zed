@@ -226,7 +226,14 @@
     // TODO clean globals
     window.getElementBlock = function (element) {
         // TODO do a search to find the first parent block for cases where
-        // element is dwon in the element hiearchy.
-        return element.parentNode.parentNode.parentNode;
+        // element is down in the element hiearchy.
+        var maybeBlock = element.parentNode.parentNode.parentNode;
+        var block;
+        if (maybeBlock.tagName === 'Z-BLOCK') {
+            block = maybeBlock;
+        } else {
+            block = element.phantomedBy.parentNode.parentNode.parentNode;
+        }
+        return block;
     };
 })();
