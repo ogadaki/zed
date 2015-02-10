@@ -171,6 +171,7 @@
         this.onclick = function () {
             window.setCurrentBlock(that);
         };
+        this.redraw = redraw.bind(null, this);
     };
 
     proto.attachedCallback = function() {

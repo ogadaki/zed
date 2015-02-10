@@ -19,7 +19,9 @@
     var setCurrentBlock = function (block) {
         var current = document.querySelector('z-block.current');
         block.classList.toggle('current');
-        current.classList.toggle('current');
+        if (current !== null) {
+            current.classList.toggle('current');
+        }
     };
 
     var setCurrentPort = function (port) {
@@ -66,7 +68,7 @@
     commands.prev = offsetCurrent.bind(null, -1);
     commands.next = offsetCurrent.bind(null, 1);
 
-    commands.createBlockElement = function (content, nInputs, nOutputs) {
+    commands.createBlockElement = function (content, nInputs, nOutputs, top, left) {
         var patch = document.querySelector('#patch');
         content = [
             '<z-port class="input"></z-port>'.repeat(nInputs),
@@ -77,12 +79,16 @@
         var fragment = utils.dom.createFragment(htmlString);
         var block = fragment.querySelector('z-block');
 
+        var defaultTop = 0;
+        var defaultLeft = 0;
         var currentBlock = document.querySelector('z-block.current');
-        var position = utils.dom.getPosition(currentBlock, currentBlock.parentNode);
-        var top = position.y + currentBlock.getBoundingClientRect().height + 23;
-        var left = position.x;
-        block.style.top = top + 'px';
-        block.style.left = left + 'px';
+        if (currentBlock !== null) {
+            var position = utils.dom.getPosition(currentBlock, currentBlock.parentNode);
+            defaultTop = position.y + currentBlock.getBoundingClientRect().height + 23;
+            defaultLeft = position.x;
+        }
+        block.style.top = top || defaultTop + 'px';
+        block.style.left = left || defaultLeft + 'px';
 
         setCurrentBlock(block);
         patch.appendChild(fragment);
@@ -223,7 +229,10 @@
         if (commands.hasOwnProperty(commandName)) {
             var args = this.argv.slice(1);
             try {
-                commands[commandName].apply(null, args);
+                var result = commands[commandName].apply(null, args);
+                if (result !== undefined) {
+                    this.write(result);
+                }
             } catch (e) {
                 this.write(e.message);
             }
@@ -249,7 +258,7 @@
         initHandler: initHandler
 
     } );
-    var res = term.open();
+    term.open();
 
     commands.goToCommandLine = function () {
         if (TermGlobals.keylock === false) {
@@ -313,10 +322,10 @@
         }
     };
 
-    commands.addButton = commands.add.bind(null, 'html', 'button', 'go', 0, 1);
-    commands.addScript = commands.add.bind(null, 'html', 'script', 'return in1 + 2;', 1, 1);
-    commands.addText = commands.add.bind(null, 'html', 'span', 'empty', 1, 1);
-    commands.addNumber = commands.add.bind(null, 'zed', 'number', '42', 1, 1);
+    commands.addButton = commands.add.bind(null, 'html', 'button', 'go', 0, 1, undefined, undefined);
+    commands.addScript = commands.add.bind(null, 'html', 'script', 'return in1 + 2;', 1, 1, undefined, undefined);
+    commands.addText = commands.add.bind(null, 'html', 'span', 'empty', 1, 1, undefined, undefined);
+    commands.addNumber = commands.add.bind(null, 'zed', 'number', '42', 1, 1, undefined, undefined);
     var bindKeysForMainMode = function () {
         Mousetrap.reset();
         Mousetrap.bind('k', commands.prev);
@@ -439,6 +448,13 @@
         }
     };
 
+    commands.move = function (left, top) {
+        var current = document.querySelector('z-block.current');
+        current.style.top = top + 'px';
+        current.style.left = left + 'px';
+        current.redraw();
+    };
+
     // Set a new stopCallback for Moustrap to avoid stopping when we start
     // editing a contenteditable, so that we can use escape to leave editing.
     Mousetrap.stopCallback = function(e, element, combo) {
@@ -474,4 +490,9 @@
       request.send();
     };
 
+    commands.save = window.savePatch;
+    commands.load = window.loadPatch;
+    commands.rm = window.removePatch;
+    commands.list = window.getPatchNames;
+    commands.clear = window.clearAll;
 })();

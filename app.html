@@ -22,6 +22,7 @@
         <script src="libs/selector.js"></script>
         <script src="libs/engine.js"></script>
         <script src="libs/view.js"></script>
+        <script src="libs/storage.js"></script>
 
         <script src="webcomponents/z-link.js"></script>
         <script src="webcomponents/z-port.js"></script>
@@ -221,15 +222,15 @@ return newTime.toFixed(1);</script>
                                 </z-block>
                                 <z-block id="text-a" style="top:360px;left:0px">
                                     <z-port id="p1" class="input"></z-port>
-                                    Moved to <span class="ze-content" contenteditable>0</span> s
+                                    <div>Moved to <span class="ze-content" contenteditable>0</span> s</div>
                                 </z-block>
                                 <z-block id="input-u" style="top:0px;left:120px">
-                                    URL: <input class="ze-content" size="50" value="http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4"></input>
+                                <div>URL: <input class="ze-content" size="50" value="http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4"></input></div>
                                     <z-port id="p1" class="output"></z-port>
                                 </z-block>
                                 <z-block id="video-a" style="top:110px;left:270px">
                                     <z-port id="p1" class="input"></z-port>
-                                    <video class="ze-content" style="width:150px;height:85px"></video>
+                                    <video class="ze-content" style="background:#ddd;width:150px;height:85px"></video>
                                     <z-port id="p2" class="output"></z-port>
                                 </z-block>
                                 <z-link
@@ -280,13 +281,13 @@ return newTime.toFixed(1);</script>
                         <div class="button-bar">
                             <button onclick="insertBlockContentInSelection();">insert block</button>
                             |
-                            <button id="lock-button" onclick="lock();" disabled>lock</button>
-                            <button id="unlock-button" onclick="unlock();">unlock</button>
+                            <button id="lock-button" onclick="lock();" disabled>use</button>
+                            <button id="unlock-button" onclick="unlock();">edit</button>
                         </div>
                         <div class="view-frame">
                             <center style="margin: 30px; color: #777;">View</center>
                             <div id="presentation-div" style='height:200px'>
-                                <div id="presentation" style="text-align:center;" onclick="selectElement(event)">
+                                <div id="presentation" style="min-height:20px;text-align:center;" onclick="selectElement(event)">
                                     My random video player
                                     <div class="to-phantom" data-id-to-phantom="button-l"></div>
                                     <div class="to-phantom" data-id-to-phantom="video-a"></div>

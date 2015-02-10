@@ -29,6 +29,7 @@
         phantomed.phantomedBy = phantom;
         phantomed.classList.add('phantomed');
     };
+    window.createPhantomLink = createPhantomLink;
 
     var createPhantom = function (element) {
       var phantom = element.cloneNode(true);
