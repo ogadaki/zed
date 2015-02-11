@@ -100,9 +100,15 @@
         temp.parentNode.removeChild(temp);
     };
 
+    var currentMode = '';
+
     // Do all the stuff needed to switch mode between 'edit' and 'presentation'.
     // Mainly swap 'phantom' and 'phantomed' objects pairs.
     var switchMode = function (mode) {
+        if (mode === currentMode) {
+            return;
+        }
+        currentMode = mode;
       // By convention, the 'phantom' elements actually are in the window
       // associated to the mode we want to switch to. The phantomed one are in the
       // window of the other mode.
