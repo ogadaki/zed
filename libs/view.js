@@ -4,6 +4,7 @@
 /*global document */
 
 /*global _ */
+/*global Mousetrap */
 
 (function(){
     'use strict';
@@ -155,5 +156,14 @@
         });
     };
 
-    window.onload = window.createPhantoms;
+    window.onload = function() {
+        window.createPhantoms();
+        var p = getPresentationElement();
+        p.onfocus = function () {
+            Mousetrap.reset();
+        };
+        p.onblur = function () {
+            window.bindKeysForMainMode();
+        };
+    };
 })();

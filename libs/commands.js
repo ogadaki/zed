@@ -345,6 +345,7 @@
         Mousetrap.bind('e', commands.edit);
         Mousetrap.bind('space', commands.fire);
     };
+    window.bindKeysForMainMode = bindKeysForMainMode;
 
     commands.escape = function () {
         if (context === 'block') {
