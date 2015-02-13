@@ -204,6 +204,7 @@
             var portContainer = this.querySelector('.ports-container.outputs');
             portContainer.appendChild(fragment);
         }
+        return port;
     };
 
     proto.showKey = function () {
