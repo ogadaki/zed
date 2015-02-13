@@ -210,7 +210,7 @@
         TermGlobals.keylock = true;
         TermGlobals.activeTerm.cursorOff();
         bindKeysForMainMode();
-        var termDiv = document.querySelector('#termDiv');
+        var termDiv = document.querySelector('#command-line-frame');
         termDiv.classList.toggle('focused');
         startBlinking();
     };
@@ -247,6 +247,7 @@
     };
 
     var term = new Terminal( {
+        termDiv: 'command-line-frame',
         handler: termHandler,
         bgColor: '#f0f0f0',
         crsrBlinkMode: true,
@@ -267,7 +268,7 @@
         TermGlobals.keylock = false;
         Mousetrap.reset();
         TermGlobals.activeTerm.cursorOn();
-        var termDiv = document.querySelector('#termDiv');
+        var termDiv = document.querySelector('#command-line-frame');
         termDiv.classList.toggle('focused');
         stopBlinking();
     };
