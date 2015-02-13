@@ -12,7 +12,7 @@
 /*global Mousetrap */
 
 
-(function(){
+export function init () {
     'use strict';
     // Keyboard shortcuts.
 
@@ -508,4 +508,4 @@
     commands.rm = window.removePatch;
     commands.list = window.getPatchNames;
     commands.clear = window.clearAll;
-})();
+};

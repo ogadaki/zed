@@ -8,6 +8,8 @@
         <meta http-equiv="content-language" content="en-US">
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
+        <script src="externals/traceur.js"></script>
+        <script src="externals/es6-module-loader.js"></script>
         <script src="externals/restyle.max.js"></script>
         <script src="externals/document-register-element.max.js"></script>
         <script src="externals/draggabilly-modified.js"></script>
@@ -271,5 +273,8 @@ return newTime.toFixed(1);</script>
 
     </body>
 
-    <script src="libs/commands.js"></script>
+    <script type="module">
+        import * as commands from 'libs/commands';
+        commands.init();
+    </script>
 </html>
