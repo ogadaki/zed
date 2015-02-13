@@ -172,12 +172,13 @@
             window.setCurrentBlock(that);
         };
         this.redraw = redraw.bind(null, this);
+        window.selector.setSelectable(this, true);
     };
 
     proto.attachedCallback = function() {
         // TODO bug in chrome or in webreflection polyfill. If makeItDraggable
         // is called in createdCallback then Draggabily adds a
-        // 'posistion:relative' because the css style of block that set
+        // 'position:relative' because the css style of block that set
         // position to absolute has not been applied yet (with chrome). With
         // WebReflection's polyfill the style is applied so Draggabilly doesn't
         // change position. Why a different behaviour? Which is wrong ? Chrome,
@@ -193,14 +194,15 @@
     };
 
     proto.addPort = function (htmlString) {
-        var port = utils.dom.createFragment(htmlString);
+        var fragment = utils.dom.createFragment(htmlString);
+        var port = fragment.firstChild;
         port.block = this;
-        if (port.firstChild.classList.contains('input')) {
+        if (port.classList.contains('input')) {
             var portContainer = this.querySelector('.ports-container.inputs');
-            portContainer.appendChild(port);
-        } else if (port.firstChild.classList.contains('output')) {
+            portContainer.appendChild(fragment);
+        } else if (port.classList.contains('output')) {
             var portContainer = this.querySelector('.ports-container.outputs');
-            portContainer.appendChild(port);
+            portContainer.appendChild(fragment);
         }
     };
 
