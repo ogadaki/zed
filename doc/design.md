@@ -17,5 +17,5 @@ export { version };
 ```
 
 On firefox there are some "syntax errors" when importing modules. It doesn't
-harm and it is known issue
+harm and it is a known issue
 https://github.com/ModuleLoader/es6-module-loader/issues/227).
