@@ -16,8 +16,16 @@
     'use strict';
     // Keyboard shortcuts.
 
+    var getCurrentBlock = function () {
+        return document.querySelector('z-block.current');
+    };
+
+    var getCurrentPort = function () {
+        return document.querySelector('z-port.current');
+    };
+
     var setCurrentBlock = function (block) {
-        var current = document.querySelector('z-block.current');
+        var current = getCurrentBlock();
         block.classList.toggle('current');
         if (current !== null) {
             current.classList.toggle('current');
@@ -25,14 +33,14 @@
     };
 
     var setCurrentPort = function (port) {
-        var current = document.querySelector('z-port.current');
+        var current = getCurrentPort();
         port.classList.toggle('current');
         current.classList.toggle('current');
     };
 
     var offsetCurrentBlock = function (offset) {
         var elements = document.querySelectorAll('z-block');
-        var current = document.querySelector('z-block.current');
+        var current = getCurrentBlock();
         for (var i = 0; i < elements.length; i++) {
             if (elements[i] === current) {
                 var index = (elements.length + i + offset) % elements.length;
@@ -45,8 +53,8 @@
     // TODO 'context' or 'mode'?
     var context = 'block';
     var offsetCurrentPort = function (offset) {
-        var elements = document.querySelectorAll('z-block.current-off-context * z-port.' + context);
-        var current = document.querySelector('z-port.current');
+        var current = getCurrentPort();
+        var elements = current.block.querySelectorAll('z-port.' + context);
         for (var i = 0; i < elements.length; i++) {
             if (elements[i] === current) {
                 var index = (elements.length + i + offset) % elements.length;
@@ -81,7 +89,7 @@
 
         var defaultTop = 0;
         var defaultLeft = 0;
-        var currentBlock = document.querySelector('z-block.current');
+        var currentBlock = getCurrentBlock();
         if (currentBlock !== null) {
             var position = utils.dom.getPosition(currentBlock, currentBlock.parentNode);
             defaultTop = position.y + currentBlock.getBoundingClientRect().height + 23;
@@ -124,14 +132,17 @@
 
     commands.add = function () {
         var current;
+        var port;
         if (context === 'block') {
             commands.addBlock.apply(null, arguments);
         } else if (context === 'input') {
             current = document.querySelector('z-block.current-off-context');
-            current.addPort('<z-port class="input"></z-port>');
+            port = current.addPort('<z-port class="input"></z-port>');
+            setCurrentPort(port);
         } else if (context === 'output') {
             current = document.querySelector('z-block.current-off-context');
-            current.addPort('<z-port class="output"></z-port>');
+            port = current.addPort('<z-port class="output"></z-port>');
+            setCurrentPort(port);
         }
     };
 
@@ -141,12 +152,12 @@
             var link = selected;
             link.unconnect();
         } else if (context === 'block') {
-            var block = document.querySelector('z-block.current');
+            var block = getCurrentBlock();
             offsetCurrentBlock(1);
             block.unplug();
             block.parentNode.removeChild(block);
         } else if (context === 'input' || context === 'output') {
-            var port = document.querySelector('z-port.current');
+            var port = getCurrentPort();
             offsetCurrentPort(1);
             port.unplug();
             port.parentNode.removeChild(port);
@@ -193,14 +204,14 @@
     };
 
     var startBlinking = function () {
-        var block = document.querySelector('z-block.current');
+        var block = getCurrentBlock();
         if (block.classList.contains('stop-blinking')) {
             block.classList.toggle('stop-blinking');
         }
     };
 
     var stopBlinking = function () {
-        var block = document.querySelector('z-block.current');
+        var block = getCurrentBlock();
         if (!block.classList.contains('stop-blinking')) {
             block.classList.toggle('stop-blinking');
         }
@@ -281,7 +292,7 @@
 
     commands.edit = function () {
         if (context === 'block') {
-            var block = document.querySelector('z-block.current');
+            var block = getCurrentBlock();
             commands.editBlock(block);
             stopBlinking();
             // Prevent default when this function is used with Moustrap.
@@ -291,7 +302,7 @@
 
     commands.fire = function () {
         if (context === 'block') {
-            var block = document.querySelector('z-block.current');
+            var block = getCurrentBlock();
             var content = block.content;
             if (content.tagName === 'BUTTON') {
                 sendEventToOutputPort(content);
@@ -399,7 +410,7 @@
                 hideAllPorts();
             });
         } else {
-            var port = document.querySelector('z-port.current');
+            var port = getCurrentPort();
             if (port !== null) {
                 if (portToLinkTo === undefined) {
                     portToLinkTo = port;
@@ -444,14 +455,14 @@
     commands.set = function (target, value) {
         if (target === 'content') {
             if (context === 'block') {
-                var block = document.querySelector('z-block.current');
+                var block = getCurrentBlock();
                 block.content.innerHTML = value;
             }
         }
     };
 
     commands.move = function (left, top) {
-        var current = document.querySelector('z-block.current');
+        var current = getCurrentBlock();
         current.style.top = top + 'px';
         current.style.left = left + 'px';
         current.redraw();
@@ -470,7 +481,7 @@
      };
 
     var blinkCursor = function () {
-        var current = document.querySelector('z-block.current');
+        var current = getCurrentBlock();
         if (current !== null) {
             current.classList.toggle('cursor-displayed');
         }
