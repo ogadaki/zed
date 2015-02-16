@@ -24,7 +24,7 @@
         '': {
             'width': 18,
             'height': 3,
-            'background': '#ddd',
+            'background': '#ccc',
             'display': 'inline-block',
             'position': 'relative',
             'overflow': 'visible',

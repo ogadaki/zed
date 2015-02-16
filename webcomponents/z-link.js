@@ -42,7 +42,8 @@
             'borderWidth': radius,
             'borderRadius': radius,
             'borderStyle': 'solid',
-            'borderColor': 'rgb(150, 150, 150)'
+            'boxShadow': '0px 0px 3px 0px #dfdfdf',
+            'borderColor': '#ccc'
         },
         'div.selector': {
             'position': 'absolute',
