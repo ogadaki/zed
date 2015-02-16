@@ -220,7 +220,8 @@
     // TODO make it a property with getter.
     proto.ports = function () {
         return {
-            'out': this.querySelector('z-port.output')
+            'out': this.querySelector('z-port.output'),
+            'outputs': this.querySelectorAll('z-port.output')
         };
     };
 
