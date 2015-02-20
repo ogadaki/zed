@@ -16,6 +16,7 @@ button:disabled {
 script, tt {
     font-family: Consolas, monospace;
     font-size: 12px;
+    spell-check: false
 }
 
 .button-bar {
