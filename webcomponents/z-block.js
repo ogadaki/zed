@@ -221,6 +221,7 @@
     proto.ports = function () {
         return {
             'out': this.querySelector('z-port.output'),
+            'inputs': this.querySelectorAll('z-port.input'),
             'outputs': this.querySelectorAll('z-port.output')
         };
     };
