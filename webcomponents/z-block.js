@@ -16,7 +16,7 @@
     var tagName = 'z-block';
 
     var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
-        <div>
+        <div id="main">
             <div class="ports-container inputs">
                 <content select="z-port.input"></content>
             </div>
@@ -73,12 +73,10 @@
             'padding-right': 3
         },
         'z-port.input .port-key': {
-            'bottom': 5,
-            'left': -5
+            'top': 3
         },
         'z-port.output .port-key': {
-            'top': 5,
-            'right': -5
+            'bottom': 3
         }
     };
     // Apply the css definition and prepending the custom element tag to all

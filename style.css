@@ -38,6 +38,13 @@ z-block.current > div {
 z-block * z-port.current {
     background: #444;
 }
+z-block.de-emphasis > div {
+    background: #f7f7f7;
+    border-color: #f7f7f7;
+}
+z-block.de-emphasis * div.content-container {
+    filter: opacity(0.75);
+}
 
 z-port.selected {
     background: #e66;
