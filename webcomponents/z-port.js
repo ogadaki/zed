@@ -114,14 +114,24 @@
             }
         },
 
+        keyElement: {
+            get: function () {
+                return this.querySelector('span.port-key');
+            }
+        },
+
+        key: {
+            set: function (value) {
+                this.keyElement.innerHTML = value;
+            }
+        },
+
         showKey: {value: function () {
-            var key = this.querySelector('span.port-key');
-            key.style.visibility = 'visible';
+            this.keyElement.style.visibility = 'visible';
         }},
 
         hideKey: {value: function () {
-            var key = this.querySelector('span.port-key');
-            key.style.visibility = 'hidden';
+            this.keyElement.style.visibility = 'hidden';
         }}
 
     });

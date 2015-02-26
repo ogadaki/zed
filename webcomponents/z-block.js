@@ -20,7 +20,7 @@
             <div class="ports-container inputs">
                 <content select="z-port.input"></content>
             </div>
-            <span class="id">a</span>
+            <span class="block-key">a</span>
             <div class="content-container">
                 <content></content>
             </div>
@@ -64,7 +64,7 @@
             'marginLeft': 8,
             'marginRight': 8
         },
-        'span.id': {
+        'span.block-key': {
             'font-size': 'smaller',
             'color': '#444',
             'position': 'absolute',
@@ -172,12 +172,12 @@
     };
 
     proto.showKey = function () {
-        var key = this.querySelector('span.id');
+        var key = this.querySelector('span.block-key');
         key.style.visibility = 'visible';
     };
 
     proto.hideKey = function () {
-        var key = this.querySelector('span.id');
+        var key = this.querySelector('span.block-key');
         key.style.visibility = 'hidden';
     };
 
