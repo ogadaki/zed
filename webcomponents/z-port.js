@@ -57,40 +57,6 @@
         });
     };
 
-    var getUniqueKey = (function () {
-        // Returns a key from a sequence that is build like that:
-        //   b, c, d...
-        //   ab, ac, ad...
-        //   aab, aac, aad...
-        // The idea is to have a sequence where each value is not the beginning
-        // of any other value (so single 'a' can't be part of the sequence).
-        //
-        // One goal is to have shortest possible keys. So maybe we should use
-        // additionnal prefix chars along with 'a'. And because it will be used
-        // for shortcuts, maybe we can choose chars based on their position on
-        // the keyboard.
-        var index = 0;
-        var charCodes = _.range('b'.charCodeAt(0), 'z'.charCodeAt(0) + 1);
-        var idStrings = _.map(charCodes, function (charCode) {
-            return String.fromCharCode(charCode);
-        });
-        return function () {
-            var key = '';
-            var i = index;
-            if (i >= charCodes.length) {
-                var r = Math.floor(i / charCodes.length);
-                i = i % charCodes.length;
-                while (r > 0) {
-                    key += 'a';
-                    r--;
-                }
-            }
-            key += idStrings[i];
-            index++;
-            return key;
-        };
-    })();
-
     var proto = Object.create(HTMLElement.prototype, {
 
         createdCallback: {value: function() {
@@ -102,8 +68,6 @@
             this.appendChild(composedDom);
 
             this.hideKey();
-            var idSpan = this.querySelector('span.port-key');
-            idSpan.innerHTML = getUniqueKey();
         }},
 
         unplug: {value: function () {
