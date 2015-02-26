@@ -66,11 +66,13 @@
         },
         'span.id': {
             'font-size': 'smaller',
-            'color': '#aaa',
+            'color': '#444',
             'position': 'absolute',
             'bottom': 0,
             'right': 0,
-            'padding-right': 3
+            'padding-right': 3,
+            'padding-left': 3,
+            'background': '#fff'
         },
         'z-port.input .port-key': {
             'top': 3
