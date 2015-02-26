@@ -8,7 +8,6 @@
 
 /*global restyle */
 /*global Draggabilly */
-/*global _ */
 
 (function(){
     'use strict';
@@ -101,95 +100,97 @@
         };
     };
 
-    var proto = Object.create(HTMLElement.prototype);
-    proto.createdCallback = function() {
-        // At the beginning the light DOM is stored in the current element.
-        var lightDom = this;
-        // Start composed DOM with a copy of the template
-        var composedDom = template.cloneNode(true);
-        // Then progressively move elements from light to composed DOM based on
-        // selectors on light DOM and fill <content> tags in composed DOM with
-        // them.
-        ['z-port.input', 'z-port.output', ''].forEach(function(selector) {
-            utils.dom.move({
-                from: lightDom, withSelector: selector,
-                to: composedDom, onTag: 'content'
+    var properties = {
+        createdCallback: {value: function() {
+            // At the beginning the light DOM is stored in the current element.
+            var lightDom = this;
+            // Start composed DOM with a copy of the template
+            var composedDom = template.cloneNode(true);
+            // Then progressively move elements from light to composed DOM based on
+            // selectors on light DOM and fill <content> tags in composed DOM with
+            // them.
+            ['z-port.input', 'z-port.output', ''].forEach(function(selector) {
+                utils.dom.move({
+                    from: lightDom, withSelector: selector,
+                    to: composedDom, onTag: 'content'
+                });
             });
-        });
-        // At this stage composed DOM is completed and light DOM is empty (i.e.
-        // 'this' has no children). Composed DOM is set as the content of the
-        // current element.
-        this.appendChild(composedDom);
+            // At this stage composed DOM is completed and light DOM is empty (i.e.
+            // 'this' has no children). Composed DOM is set as the content of the
+            // current element.
+            this.appendChild(composedDom);
 
-        this.hideKey();
+            this.hideKey();
 
-        var that = this;
-        var ports = that.querySelectorAll('z-port');
-        [].forEach.call(ports, function(port) {
-            port.block = that;
-        });
+            var that = this;
+            var ports = that.querySelectorAll('z-port');
+            [].forEach.call(ports, function(port) {
+                port.block = that;
+            });
 
-        this.content = this.querySelector('.ze-content');
+            this.content = this.querySelector('.ze-content');
 
-        // TODO move elsewhere
-        this.onclick = function () {
-            window.setCurrentBlock(that);
-        };
-        this.redraw = redraw.bind(null, this);
-        window.selector.setSelectable(this, true);
+            // TODO move elsewhere
+            this.onclick = function () {
+                window.setCurrentBlock(that);
+            };
+            this.redraw = redraw.bind(null, this);
+            window.selector.setSelectable(this, true);
+        }},
+
+        attachedCallback: {value: function() {
+            // TODO bug in chrome or in webreflection polyfill. If makeItDraggable
+            // is called in createdCallback then Draggabily adds a
+            // 'position:relative' because the css style of block that set
+            // position to absolute has not been applied yet (with chrome). With
+            // WebReflection's polyfill the style is applied so Draggabilly doesn't
+            // change position. Why a different behaviour? Which is wrong ? Chrome,
+            // webreflection or the spec? Maybe we can try with polymer polyfill.
+            makeItDraggable(this);
+        }},
+
+        unplug: {value: function() {
+            var ports = this.querySelectorAll('z-port');
+            [].forEach.call(ports, function (port) {
+                port.unplug();
+            });
+        }},
+
+        addPort: {value: function (htmlString) {
+            var fragment = utils.dom.createFragment(htmlString);
+            var port = fragment.firstChild;
+            port.block = this;
+            if (port.classList.contains('input')) {
+                var portContainer = this.querySelector('.ports-container.inputs');
+                portContainer.appendChild(fragment);
+            } else if (port.classList.contains('output')) {
+                var portContainer = this.querySelector('.ports-container.outputs');
+                portContainer.appendChild(fragment);
+            }
+            return port;
+        }},
+
+        showKey: {value: function () {
+            var key = this.querySelector('span.block-key');
+            key.style.visibility = 'visible';
+        }},
+
+        hideKey: {value: function () {
+            var key = this.querySelector('span.block-key');
+            key.style.visibility = 'hidden';
+        }},
+
+        // TODO make it a property with getter.
+        ports: {value: function () {
+            return {
+                'out': this.querySelector('z-port.output'),
+                'inputs': this.querySelectorAll('z-port.input'),
+                'outputs': this.querySelectorAll('z-port.output')
+            };
+        }}
     };
 
-    proto.attachedCallback = function() {
-        // TODO bug in chrome or in webreflection polyfill. If makeItDraggable
-        // is called in createdCallback then Draggabily adds a
-        // 'position:relative' because the css style of block that set
-        // position to absolute has not been applied yet (with chrome). With
-        // WebReflection's polyfill the style is applied so Draggabilly doesn't
-        // change position. Why a different behaviour? Which is wrong ? Chrome,
-        // webreflection or the spec? Maybe we can try with polymer polyfill.
-        makeItDraggable(this);
-    };
-
-    proto.unplug = function() {
-        var ports = this.querySelectorAll('z-port');
-        [].forEach.call(ports, function (port) {
-            port.unplug();
-        });
-    };
-
-    proto.addPort = function (htmlString) {
-        var fragment = utils.dom.createFragment(htmlString);
-        var port = fragment.firstChild;
-        port.block = this;
-        if (port.classList.contains('input')) {
-            var portContainer = this.querySelector('.ports-container.inputs');
-            portContainer.appendChild(fragment);
-        } else if (port.classList.contains('output')) {
-            var portContainer = this.querySelector('.ports-container.outputs');
-            portContainer.appendChild(fragment);
-        }
-        return port;
-    };
-
-    proto.showKey = function () {
-        var key = this.querySelector('span.block-key');
-        key.style.visibility = 'visible';
-    };
-
-    proto.hideKey = function () {
-        var key = this.querySelector('span.block-key');
-        key.style.visibility = 'hidden';
-    };
-
-    // TODO make it a property with getter.
-    proto.ports = function () {
-        return {
-            'out': this.querySelector('z-port.output'),
-            'inputs': this.querySelectorAll('z-port.input'),
-            'outputs': this.querySelectorAll('z-port.output')
-        };
-    };
-
+    var proto = Object.create(HTMLElement.prototype, properties);
     proto.css = style;
     document.registerElement(tagName, {prototype: proto});
 

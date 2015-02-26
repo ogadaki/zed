@@ -5,7 +5,6 @@
 
 /*global utils */
 /*global restyle */
-/*global _ */
 
 (function(){
     'use strict';
@@ -57,7 +56,8 @@
         });
     };
 
-    var proto = Object.create(HTMLElement.prototype, {
+
+    var properties = {
 
         createdCallback: {value: function() {
             this.links = [];
@@ -134,8 +134,9 @@
             this.keyElement.style.visibility = 'hidden';
         }}
 
-    });
+    };
 
+    var proto = Object.create(HTMLElement.prototype, properties);
     proto.css = style;
     document.registerElement(tagName, {prototype: proto});
 
