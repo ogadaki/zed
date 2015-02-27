@@ -190,14 +190,15 @@
             this.keyElement.style.visibility = 'hidden';
         }},
 
-        // TODO make it a property with getter.
-        ports: {value: function () {
-            return {
-                'out': this.querySelector('z-port.output'),
-                'inputs': this.querySelectorAll('z-port.input'),
-                'outputs': this.querySelectorAll('z-port.output')
-            };
-        }}
+        ports: {
+            get: function () {
+                return {
+                    'out': this.querySelector('z-port.output'),
+                    'inputs': this.querySelectorAll('z-port.input'),
+                    'outputs': this.querySelectorAll('z-port.output')
+                };
+            }
+        }
     };
 
     var proto = Object.create(HTMLElement.prototype, properties);
