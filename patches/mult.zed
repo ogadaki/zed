@@ -1,0 +1,125 @@
+{
+    "blocks": [
+        {
+            "id": 0,
+            "tagName": "button",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "0px",
+            "width": "",
+            "value": "go",
+            "innerHTML": ""
+        },
+        {
+            "id": 1,
+            "tagName": "script",
+            "nInputs": 2,
+            "nOutputs": 2,
+            "top": "68px",
+            "left": "72px",
+            "width": "",
+            "value": "['1 = ' + in1, '2 = ' + in2]",
+            "innerHTML": ""
+        },
+        {
+            "id": 2,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "127px",
+            "left": "0px",
+            "width": "",
+            "value": "empty",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">empty</span>"
+        },
+        {
+            "id": 3,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "85px",
+            "width": "",
+            "value": "ooo",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">ooo</span>"
+        },
+        {
+            "id": 4,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "3px",
+            "left": "195px",
+            "width": "",
+            "value": "aaa",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">aaa</span>"
+        },
+        {
+            "id": 5,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "128px",
+            "left": "129px",
+            "width": "",
+            "value": "empty",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">empty</span>"
+        }
+    ],
+    "links": [
+        {
+            "input": {
+                "block": 1,
+                "port": 0
+            },
+            "output": {
+                "block": 0,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 1,
+                "port": 0
+            },
+            "output": {
+                "block": 3,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 1,
+                "port": 1
+            },
+            "output": {
+                "block": 4,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 2,
+                "port": 0
+            },
+            "output": {
+                "block": 1,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 5,
+                "port": 0
+            },
+            "output": {
+                "block": 1,
+                "port": 1
+            }
+        }
+    ],
+    "presentation": {
+        "innerHTML": "zzz<br><br>zzz"
+    }
+}

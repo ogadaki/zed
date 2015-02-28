@@ -1,0 +1,104 @@
+{
+    "blocks": [
+        {
+            "id": 0,
+            "tagName": "button",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "0px",
+            "width": "",
+            "value": "go",
+            "innerHTML": ""
+        },
+        {
+            "id": 1,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "109px",
+            "left": "1px",
+            "width": "",
+            "value": "new Handsontable(in1, {data: [[1, 2], [2, 6], [3,5]]})",
+            "innerHTML": ""
+        },
+        {
+            "id": 2,
+            "tagName": "div",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "1px",
+            "left": "78px",
+            "width": "",
+            "value": "",
+            "innerHTML": "<div id=\"ht_4ba39de084d11df6\" class=\"ze-content handsontable\" contenteditable=\"\"></div>"
+        },
+        {
+            "id": 3,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "158px",
+            "left": "1px",
+            "width": "",
+            "value": "in1.getData()",
+            "innerHTML": ""
+        },
+        {
+            "id": 4,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "207px",
+            "left": "1px",
+            "width": "",
+            "value": "empty",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">empty</span>"
+        }
+    ],
+    "links": [
+        {
+            "input": {
+                "block": 1,
+                "port": 0
+            },
+            "output": {
+                "block": 0,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 1,
+                "port": 0
+            },
+            "output": {
+                "block": 2,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 3,
+                "port": 0
+            },
+            "output": {
+                "block": 1,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 4,
+                "port": 0
+            },
+            "output": {
+                "block": 3,
+                "port": 0
+            }
+        }
+    ],
+    "presentation": {
+        "innerHTML": ""
+    }
+}

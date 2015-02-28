@@ -1,0 +1,230 @@
+{
+    "blocks": [
+        {
+            "id": 0,
+            "tagName": "button",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "0px",
+            "width": "",
+            "value": "load video",
+            "innerHTML": ""
+        },
+        {
+            "id": 1,
+            "tagName": "button",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "280px",
+            "left": "310px",
+            "width": "",
+            "value": "play",
+            "innerHTML": ""
+        },
+        {
+            "id": 2,
+            "tagName": "button",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "250px",
+            "left": "440px",
+            "width": "",
+            "value": "pause",
+            "innerHTML": ""
+        },
+        {
+            "id": 3,
+            "tagName": "button",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "170px",
+            "left": "0px",
+            "width": "",
+            "value": "go to random position",
+            "innerHTML": ""
+        },
+        {
+            "id": 4,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "60px",
+            "left": "120px",
+            "width": "",
+            "value": "dest1.src = in1;",
+            "innerHTML": ""
+        },
+        {
+            "id": 5,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "340px",
+            "left": "270px",
+            "width": "",
+            "value": "in1.play();",
+            "innerHTML": ""
+        },
+        {
+            "id": 6,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "310px",
+            "left": "440px",
+            "width": "",
+            "value": "in1.pause();",
+            "innerHTML": ""
+        },
+        {
+            "id": 7,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "250px",
+            "left": "0px",
+            "width": "",
+            "value": "var video = in1;\nvar max = video.duration;\nvar newTime = Math.random()*max;\nvideo.currentTime = newTime;\nreturn newTime.toFixed(1);",
+            "innerHTML": ""
+        },
+        {
+            "id": 8,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 0,
+            "top": "360px",
+            "left": "0px",
+            "width": "",
+            "value": "0",
+            "innerHTML": "<div>Moved to <span class=\"ze-content\" contenteditable=\"\">0</span> s</div>"
+        },
+        {
+            "id": 9,
+            "tagName": "input",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "120px",
+            "width": "",
+            "value": "http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4",
+            "innerHTML": "<div>URL: <input class=\"ze-content\" size=\"50\" value=\"http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4\"></div>"
+        },
+        {
+            "id": 10,
+            "tagName": "video",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "110px",
+            "left": "270px",
+            "width": "",
+            "value": "",
+            "innerHTML": "<video class=\"ze-content phantomed\" style=\"background:#ddd;width:150px;height:85px\"></video>"
+        }
+    ],
+    "links": [
+        {
+            "input": {
+                "block": 4,
+                "port": 0
+            },
+            "output": {
+                "block": 0,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 4,
+                "port": 0
+            },
+            "output": {
+                "block": 9,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 5,
+                "port": 0
+            },
+            "output": {
+                "block": 1,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 5,
+                "port": 0
+            },
+            "output": {
+                "block": 10,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 6,
+                "port": 0
+            },
+            "output": {
+                "block": 2,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 6,
+                "port": 0
+            },
+            "output": {
+                "block": 10,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 7,
+                "port": 0
+            },
+            "output": {
+                "block": 3,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 7,
+                "port": 0
+            },
+            "output": {
+                "block": 10,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 8,
+                "port": 0
+            },
+            "output": {
+                "block": 7,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 10,
+                "port": 0
+            },
+            "output": {
+                "block": 4,
+                "port": 0
+            }
+        }
+    ],
+    "presentation": {
+        "innerHTML": "\n                                    My random video player\n                                    <div class=\"to-phantom\" data-id-to-phantom=\"button-l\"><button data-index-to-phantom=\"0\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">load video</button></div>\n                                    <div class=\"to-phantom\" data-id-to-phantom=\"video-a\"><video data-index-to-phantom=\"10\" class=\"ze-content phantom\" style=\"background:#ddd;width:150px;height:85px\" contenteditable=\"false\"></video></div>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-p\"><button data-index-to-phantom=\"1\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">play</button></span>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-s\"><button data-index-to-phantom=\"2\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">pause</button></span>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-r\"><button data-index-to-phantom=\"3\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">go to random position</button></span>\n                                "
+    }
+}
