@@ -1,0 +1,62 @@
+{
+    "blocks": [
+        {
+            "id": 0,
+            "tagName": "button",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "0px",
+            "width": "",
+            "value": "go",
+            "innerHTML": "<button onclick=\"sendEventToOutputPort(this)\" class=\"ze-content\" contenteditable=\"\">go</button>"
+        },
+        {
+            "id": 1,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "68px",
+            "left": "0px",
+            "width": "",
+            "value": "666",
+            "innerHTML": "<script class=\"ze-content\" type=\"application/x-prevent-script-execution-onload\" style=\"display: block;white-space: pre-wrap;\" oninput=\"compileScript(this)\" contenteditable=\"\">666</script>"
+        },
+        {
+            "id": 2,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "127px",
+            "left": "0px",
+            "width": "",
+            "value": "empty",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">empty</span>"
+        }
+    ],
+    "links": [
+        {
+            "input": {
+                "block": 1,
+                "port": 0
+            },
+            "output": {
+                "block": 0,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 2,
+                "port": 0
+            },
+            "output": {
+                "block": 1,
+                "port": 0
+            }
+        }
+    ],
+    "presentation": {
+        "innerHTML": ""
+    }
+}
