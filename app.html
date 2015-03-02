@@ -74,6 +74,10 @@
                             |
                             <button onclick="window.commands.clear()" onfocus="this.blur()">clear patch</button>
                             <button onclick="window.commands.save('file', 'patch.zed')" onfocus="this.blur()">export patch</button>
+                            <span>
+                                <button style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import patch</button>
+                                <input type="file" style="display: none;" onchange="window.commands.load(event.target.files[0]);"/>
+                            </span>
                         </div>
 
                         <div id="edit" style='background:#f0f0f0;padding:15px;' onclick="switchMode('edit')">
