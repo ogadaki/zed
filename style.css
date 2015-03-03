@@ -16,7 +16,6 @@ button:disabled {
 script, tt {
     font-family: Consolas, monospace;
     font-size: 12px;
-    spell-check: false
 }
 
 .button-bar {
@@ -44,6 +43,22 @@ z-block.de-emphasis > div {
 }
 z-block.de-emphasis * div.content-container {
     filter: opacity(0.75);
+}
+z-block.comment > div {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: smaller;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+z-block.comment.current > div {
+    -webkit-box-shadow: 0px 0px 1px 0px #bbb;
+    -moz-box-shadow: 0px 0px 1px 0px #bbb;
+    box-shadow: 0px 0px 1px 0px #bbb;
+}
+z-block.comment > div:focus {
+    background: red;
 }
 
 z-port.selected {
