@@ -57,9 +57,6 @@ z-block.comment.current > div {
     -moz-box-shadow: 0px 0px 1px 0px #bbb;
     box-shadow: 0px 0px 1px 0px #bbb;
 }
-z-block.comment > div:focus {
-    background: red;
-}
 
 z-port.selected {
     background: #e66;
