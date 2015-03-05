@@ -1,0 +1,146 @@
+{
+    "blocks": [
+        {
+            "id": 0,
+            "tagName": "button",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "2px",
+            "width": "",
+            "value": "show avatar",
+            "innerHTML": ""
+        },
+        {
+            "id": 1,
+            "tagName": "script",
+            "nInputs": 2,
+            "nOutputs": 1,
+            "top": "167px",
+            "left": "81px",
+            "width": "",
+            "value": "in1 + '/' + in2",
+            "innerHTML": ""
+        },
+        {
+            "id": 2,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "51px",
+            "left": "66px",
+            "width": "",
+            "value": "https://api.github.com/users",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">https://api.github.com/users</span>"
+        },
+        {
+            "id": 3,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "212px",
+            "left": "83px",
+            "width": "",
+            "value": "http.get(in1)",
+            "innerHTML": ""
+        },
+        {
+            "id": 4,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "261px",
+            "left": "83px",
+            "width": "",
+            "value": "dest1.src = in1.avatar_url",
+            "innerHTML": ""
+        },
+        {
+            "id": 5,
+            "tagName": "img",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "314px",
+            "left": "82px",
+            "width": "",
+            "value": "",
+            "innerHTML": "<img src=\"\" style=\"width:100px\" class=\"ze-content phantomed\">"
+        },
+        {
+            "id": 6,
+            "tagName": "input",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "99px",
+            "left": "114px",
+            "width": "",
+            "value": "",
+            "innerHTML": "<input class=\"ze-content phantomed\" contenteditable=\"\">"
+        }
+    ],
+    "links": [
+        {
+            "input": {
+                "block": 1,
+                "port": 0
+            },
+            "output": {
+                "block": 0,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 1,
+                "port": 0
+            },
+            "output": {
+                "block": 2,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 1,
+                "port": 1
+            },
+            "output": {
+                "block": 6,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 3,
+                "port": 0
+            },
+            "output": {
+                "block": 1,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 4,
+                "port": 0
+            },
+            "output": {
+                "block": 3,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 5,
+                "port": 0
+            },
+            "output": {
+                "block": 4,
+                "port": 0
+            }
+        }
+    ],
+    "presentation": {
+        "innerHTML": "Enter a github user:<br><input data-index-to-phantom=\"6\" disabled=\"\" class=\"ze-content phantom\" contenteditable=\"false\"><br>Then <button data-index-to-phantom=\"0\" disabled=\"\" onclick=\"sendEventToOutputPort(this)\" class=\"ze-content phantom\" contenteditable=\"false\">show avatar</button><br>Its avatar is:<br><img data-index-to-phantom=\"5\" style=\"width:100px\" class=\"ze-content phantomed phantom\" contenteditable=\"false\">"
+    }
+}
