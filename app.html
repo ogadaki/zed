@@ -52,22 +52,22 @@
                 <div style="overflow: hidden;">
                     <div style="float: left; width: 70%">
                         <div class="button-bar">
-                            <button onclick="window.commands.remove()" onfocus="this.blur()">remove</button>
+                            <button onclick="app.commands.remove()" onfocus="this.blur()">remove</button>
                             |
-                            <button onclick="window.commands.addButton()" onfocus="this.blur()">button</button>
-                            <button onclick="window.commands.addScript()" onfocus="this.blur()">script</button>
-                            <button onclick="window.commands.addText()" onfocus="this.blur()">text</button>
-                            <button onclick="window.commands.addNumber()" onfocus="this.blur()">number</button>
+                            <button onclick="app.commands.addButton()" onfocus="this.blur()">button</button>
+                            <button onclick="app.commands.addScript()" onfocus="this.blur()">script</button>
+                            <button onclick="app.commands.addText()" onfocus="this.blur()">text</button>
+                            <button onclick="app.commands.addNumber()" onfocus="this.blur()">number</button>
                             |
-                            <button onclick="window.commands.edit()" onfocus="this.blur()">edit current block</button>
+                            <button onclick="app.commands.edit()" onfocus="this.blur()">edit current block</button>
                             |
-                            <button onclick="window.commands.goToCommandLine()" onfocus="this.blur()">command line</button>
+                            <button onclick="app.commands.goToCommandLine()" onfocus="this.blur()">command line</button>
                             |
-                            <button onclick="window.commands.clear()" onfocus="this.blur()">clear patch</button>
-                            <button onclick="window.commands.save('file', 'patch.zed')" onfocus="this.blur()">export patch</button>
+                            <button onclick="app.commands.clear()" onfocus="this.blur()">clear patch</button>
+                            <button onclick="app.commands.save('file', 'patch.zed')" onfocus="this.blur()">export patch</button>
                             <span>
                                 <button style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import patch</button>
-                                <input type="file" style="display: none;" onchange="window.commands.load(event.target.files[0]);"/>
+                                <input type="file" style="display: none;" onchange="app.commands.load(event.target.files[0]);"/>
                             </span>
                         </div>
 
