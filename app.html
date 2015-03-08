@@ -8,8 +8,8 @@
         <meta http-equiv="content-language" content="en-US">
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-        <script src="externals/traceur.js"></script>
-        <script src="externals/es6-module-loader.js"></script>
+        <!--<script src="externals/traceur.js"></script>-->
+        <!--<script src="externals/es6-module-loader.js"></script>-->
         <script src="externals/restyle.max.js"></script>
         <script src="externals/document-register-element.max.js"></script>
         <script src="externals/draggabilly-modified.js"></script>
@@ -23,12 +23,13 @@
 
         <script src="lib/utils.js"></script>
         <script src="lib/selector.js"></script>
-        <script src="lib/engine.js"></script>
         <script src="lib/view.js"></script>
 
         <script src="webcomponents/z-link.js"></script>
         <script src="webcomponents/z-port.js"></script>
         <script src="webcomponents/z-block.js"></script>
+
+        <script src="lib/bundle.js"></script>
 
         <script src="externals/raphael-min.js"></script>
         <script src="externals/g.raphael-min.js"></script>
@@ -159,8 +160,7 @@
 
     </body>
 
-    <script type="module">
-        import app from 'lib/app';
-        app.init();
+    <script>
+        window.app.init();
     </script>
 </html>
