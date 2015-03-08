@@ -71,23 +71,23 @@
                             </span>
                         </div>
 
-                        <div id="edit" style='background:#f0f0f0;padding:15px;' onclick="switchMode('edit')">
+                        <div id="edit" style='background:#f0f0f0;padding:15px;' onclick="app.view.switchMode('edit')">
                             <div id="patch" style='width500px;height:410px' onclick="window.selector.unselect()">
                             </div>
                         </div>
                     </div>
 
-                    <div style="float: right; width: 29%;" onclick="switchMode('presentation')">
+                    <div style="float: right; width: 29%;" onclick="app.view.switchMode('presentation')">
                         <div class="button-bar">
-                            <button onclick="insertBlockContentInSelection();">insert block</button>
+                            <button onclick="app.view.insertBlockContentInSelection();">insert block</button>
                             |
-                            <button id="lock-button" onclick="lock();" disabled>use</button>
-                            <button id="unlock-button" onclick="unlock();">edit</button>
+                            <button id="lock-button" onclick="app.view.lock();" disabled>use</button>
+                            <button id="unlock-button" onclick="app.view.unlock();">edit</button>
                         </div>
                         <div class="view-frame">
                             <center style="margin: 30px; color: #777;">View</center>
                             <div id="presentation-div" style='height:200px'>
-                                <div id="presentation" style="min-height:20px;text-align:center;" onclick="selectElement(event)">
+                                <div id="presentation" style="min-height:20px;text-align:center;" onclick="app.view.selectElement(event)">
                                 </div>
                             </div>
                         </div>
