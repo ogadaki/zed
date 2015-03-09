@@ -9,7 +9,7 @@
             "left": "153px",
             "width": "",
             "value": "simple.zed",
-            "innerHTML": "<button onclick=\"window.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">simple.zed</span></button>"
+            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">simple.zed</span></button>"
         },
         {
             "id": 1,
@@ -20,7 +20,7 @@
             "left": "151px",
             "width": "",
             "value": "mult.zed",
-            "innerHTML": "<button onclick=\"window.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">mult.zed</span></button>"
+            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">mult.zed</span></button>"
         },
         {
             "id": 2,
@@ -31,7 +31,7 @@
             "left": "307px",
             "width": "",
             "value": "video.zed",
-            "innerHTML": "<button onclick=\"window.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">video.zed</span></button>"
+            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">video.zed</span></button>"
         },
         {
             "id": 3,
@@ -42,7 +42,7 @@
             "left": "306px",
             "width": "",
             "value": "graph.zed",
-            "innerHTML": "<button onclick=\"window.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">graph.zed</span></button>"
+            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">graph.zed</span></button>"
         },
         {
             "id": 4,
@@ -53,7 +53,7 @@
             "left": "308px",
             "width": "",
             "value": "table.zed",
-            "innerHTML": "<button onclick=\"window.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">table.zed</span></button>"
+            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">table.zed</span></button>"
         },
         {
             "id": 5,
@@ -64,7 +64,7 @@
             "left": "138px",
             "width": "",
             "value": "promise.zed",
-            "innerHTML": "<button onclick=\"window.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">promise.zed</span></button>"
+            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">promise.zed</span></button>"
         },
         {
             "id": 6,
