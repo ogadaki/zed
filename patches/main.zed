@@ -41,8 +41,8 @@
             "top": "227px",
             "left": "306px",
             "width": "",
-            "value": "graph.zed",
-            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">graph.zed</span></button>"
+            "value": "stats.zed",
+            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">stats.zed</span></button>"
         },
         {
             "id": 4,
