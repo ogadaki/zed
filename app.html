@@ -48,7 +48,7 @@
     <body>
 
         <div>
-            <div style="float: left; width: 70%">
+            <div id="workbench" style="float: left;">
                 <div style="overflow: hidden;">
                     <div style="float: left; width: 70%">
                         <div class="button-bar">
@@ -83,11 +83,13 @@
                             |
                             <button id="lock-button" onclick="app.view.lock();" disabled>use</button>
                             <button id="unlock-button" onclick="app.view.unlock();">edit</button>
+                            |
+                            <button onclick="document.body.classList.toggle('help-hidden');">toggle help</button>
                         </div>
                         <div class="view-frame">
                             <center style="margin: 30px; color: #777;">View</center>
                             <div id="presentation-div" style='height:300px'>
-                                <div id="presentation" style="min-height:20px;text-align:center;" onclick="app.view.selectElement(event)">
+                                <div id="presentation" style="min-height:19px;text-align:center;" onclick="app.view.selectElement(event)">
                                 </div>
                             </div>
                         </div>
@@ -102,7 +104,7 @@
                 </div>
             </div>
 
-            <div id="help" style="float: left; width: 20%;">
+            <div id="help" style="float: left;">
                 <div id="help-bar">Keyboard shortcuts</div>
                 <div id="help-content">
 

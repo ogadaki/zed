@@ -130,3 +130,18 @@ z-link.selected {
     background: white;
     box-shadow: 2px 2px 3px 0px #dfdfdf;
 }
+
+/* help frame toggle */
+#help {
+    width: 29%;
+}
+body.help-hidden * #help {
+    width: 0%;
+    visibility: hidden;
+}
+#workbench {
+    width: 70%;
+}
+body.help-hidden * #workbench {
+    width: 99%;
+}
