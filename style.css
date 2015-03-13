@@ -72,6 +72,18 @@ z-link.selected {
     border-color: #e66;
 }
 
+/* Patch message */
+#message-div {
+    padding: 3px;
+    font-family: Consolas, monospace;
+    font-size: 12px;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+    /* In case message is empty. */
+    min-height: 1.1em;
+}
+
 /* Command line frame */
 .prompt {
     color: #888;
