@@ -1,5 +1,5 @@
 # zed
-A visual editor for programming with javascript, targeted to both programmers
+A visual editor to craft numerical stuff, targeted to both programmers
 and non-programmers. How can we design an editor for programming tasks that
 won't afraid non-programmers and that programmers (at least some of them) will
 still find usable?
