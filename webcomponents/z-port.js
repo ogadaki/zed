@@ -1,8 +1,3 @@
-/*eslint quotes: [2, "single"]*/
-
-/*global document, window */
-/*global HTMLElement */
-
 /*global restyle */
 
 'use strict';
@@ -140,4 +135,3 @@ var properties = {
 var proto = Object.create(HTMLElement.prototype, properties);
 proto.css = style;
 document.registerElement(tagName, {prototype: proto});
-

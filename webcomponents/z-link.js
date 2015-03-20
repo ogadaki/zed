@@ -5,11 +5,6 @@
 // origin position is relative coordinates (0,0) and other end is (width,0).
 // So be sure that CSS styling is done accordingly.
 
-/*eslint quotes: [2, "single"]*/
-
-/*global document */
-/*global HTMLElement */
-
 /*global getStyleProperty */
 
 /*global _ */

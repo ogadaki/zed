@@ -1,9 +1,3 @@
-/*eslint quotes: [2, "single"]*/
-
-/*global document */
-/*global HTMLElement */
-/*global window */
-
 /*global restyle */
 /*global Draggabilly */
 
