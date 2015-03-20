@@ -7,13 +7,13 @@
 
 /*global getStyleProperty */
 
-/*global _ */
 /*global restyle */
 
 'use strict';
 
 var utils = require('../lib/utils');
 var selector = require('../lib/selector');
+var _ = require('../externals/lodash');
 
 var tagName = 'z-link';
 
