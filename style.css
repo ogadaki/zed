@@ -25,26 +25,26 @@ script, tt {
 }
 
 /* Web components styling that can't be done during their definition */
-z-block.current.cursor-displayed > div {
+z-block.current.cursor-displayed #main {
     border-left-color: #e66;
 }
-z-block.current.cursor-displayed.stop-blinking > div {
+z-block.current.cursor-displayed.stop-blinking #main {
     border-left-color: #faa;
 }
-z-block.current > div {
+z-block.current #main {
     border-left-color: #faa;
 }
 z-block * z-port.current {
     background: #444;
 }
-z-block.de-emphasis > div {
+z-block.de-emphasis #main {
     background: #f7f7f7;
     border-color: #f7f7f7;
 }
 z-block.de-emphasis * div.content-container {
     filter: opacity(0.75);
 }
-z-block.comment > div {
+z-block.comment #main {
     background-color: transparent;
     border-color: transparent;
     font-size: smaller;
@@ -52,12 +52,12 @@ z-block.comment > div {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-z-block.comment.current > div {
+z-block.comment.current #main {
     -webkit-box-shadow: 0px 0px 1px 0px #bbb;
     -moz-box-shadow: 0px 0px 1px 0px #bbb;
     box-shadow: 0px 0px 1px 0px #bbb;
 }
-z-block.has-execution-error > div {
+z-block.has-execution-error #main {
     border-right-color: #fcc;
 }
 

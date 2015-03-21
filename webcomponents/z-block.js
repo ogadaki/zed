@@ -36,7 +36,7 @@ var cssAsJson = {
         'display': 'inline-block',
         'position': 'absolute'
     },
-    '> div': {
+    '#main': {
         'background': 'white',
         'border-left': '3px solid',
         'border-left-color': 'white',
