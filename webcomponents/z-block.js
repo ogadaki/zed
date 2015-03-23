@@ -9,17 +9,17 @@ var selector = require('../lib/selector');
 var tagName = 'z-block';
 
 var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
+    <div class="ports-container inputs">
+        <content select="z-port.input"></content>
+    </div>
     <div id="main">
-        <div class="ports-container inputs">
-            <content select="z-port.input"></content>
-        </div>
-        <span class="block-key">a</span>
         <div class="content-container">
+            <span class="block-key">a</span>
             <content></content>
         </div>
-        <div class="ports-container outputs">
-            <content select="z-port.output"></content>
-        </div>
+    </div>
+    <div class="ports-container outputs">
+        <content select="z-port.output"></content>
     </div>
 */});
 var template = utils.dom.createFragment(htmlTemplate);
@@ -37,15 +37,24 @@ var cssAsJson = {
         'position': 'absolute'
     },
     '#main': {
-        'background': 'white',
+        'background': 'rgba(1, 1, 1, 0)',
         'border-left': '3px solid',
-        'border-left-color': 'white',
+        'border-left-color': 'rgba(1, 1, 1, 0)',
         'border-right': '3px solid',
-        'border-right-color': 'white',
-        'boxShadow': '2px 2px 3px 0px #dfdfdf'
+        'border-right-color': 'rgba(1, 1, 1, 0)'
     },
     '.content-container': {
-        'padding': '8px 15px 8px 15px'
+        'background': 'white',
+        'boxShadow': '2px 2px 3px 0px #dfdfdf'
+    },
+    '.content-container > script': {
+        'padding': '4px 8px 2px 8px'
+    },
+    '.content-container > span': {
+        'padding': '4px 8px 2px 8px'
+    },
+    '.content-container > div': {
+        'padding': '4px 8px 2px 8px'
     },
     '.ports-container': {
         'padding': 0,
@@ -58,20 +67,20 @@ var cssAsJson = {
         'marginRight': 8
     },
     'span.block-key': {
-        'font-size': 'smaller',
+        'font-size': 11,
         'color': '#444',
         'position': 'absolute',
-        'bottom': 0,
-        'right': 0,
+        'bottom': 3,
+        'right': 3,
         'padding-right': 3,
         'padding-left': 3,
         'background': '#fff'
     },
     'z-port.input .port-key': {
-        'top': 3
+        'top': -3
     },
     'z-port.output .port-key': {
-        'bottom': 3
+        'bottom': -3
     }
 };
 // Apply the css definition and prepending the custom element tag to all

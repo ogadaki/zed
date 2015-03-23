@@ -17,8 +17,8 @@ var cssAsJson = {
     // The following will apply to the root DOM element of the custom
     // element.
     '': {
-        'width': 18,
-        'height': 3,
+        'width': 10,
+        'height': 2,
         'background': '#ccc',
         'display': 'inline-block',
         'position': 'relative',

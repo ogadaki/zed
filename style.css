@@ -37,20 +37,26 @@ z-block.current #main {
 z-block * z-port.current {
     background: #444;
 }
-z-block.de-emphasis #main {
-    background: #f7f7f7;
-    border-color: #f7f7f7;
-}
 z-block.de-emphasis * div.content-container {
+    background: #f7f7f7;
     filter: opacity(0.75);
 }
 z-block.comment #main {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+z-block.comment .content-container {
     background-color: transparent;
     border-color: transparent;
     font-size: smaller;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    padding: 4px 8px 4px 8px;
+}
+z-block.comment .content-container > span {
+    padding: 0px;
 }
 z-block.comment.current #main {
     -webkit-box-shadow: 0px 0px 1px 0px #bbb;
@@ -69,7 +75,10 @@ z-port.to-link-to {
 }
 
 z-link.selected {
-    border-color: #e66;
+    background: #e66;
+    -webkit-box-shadow: 0px 0px 0px 1px #e66;
+    -moz-box-shadow: 0px 0px 0px 1px #e66;
+    box-shadow: 0px 0px 0px 1px #e66;
 }
 
 /* Patch message */
@@ -131,6 +140,10 @@ z-link.selected {
 /* Patch frame */
 #patch {
     position: relative;
+}
+#edit {
+    background: #f0f0f0;
+    padding: 15px;
 }
 
 /* View frame */

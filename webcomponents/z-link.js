@@ -24,22 +24,14 @@ var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
 */});
 var template = utils.dom.createFragment(htmlTemplate);
 
-// TODO Use a custom element for line width.
-var lineWidth = 3.0;
-var radius = lineWidth / 2;
 var cssAsJson = {
     // The following will apply to the root DOM element of the custom
     // element.
     '': {
         'position': 'absolute',
-        'height': 0,
-        'margin-left': -radius,
-        'margin-top': -radius,
-        'borderWidth': radius,
-        'borderRadius': radius,
-        'borderStyle': 'solid',
-        'boxShadow': '0px 0px 3px 0px #dfdfdf',
-        'borderColor': '#ccc'
+        'height': 1,
+        'background': '#aaa',
+        'boxShadow': '0px 0px 3px 0px #dfdfdf'
     },
     'div.selector': {
         'position': 'absolute',
