@@ -1,0 +1,313 @@
+{
+    "blocks": [
+        {
+            "id": 0,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "36px",
+            "left": "0px",
+            "width": "",
+            "value": "window.loadScript(in1);",
+            "innerHTML": ""
+        },
+        {
+            "id": 1,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "69px",
+            "width": "",
+            "value": "https://raw.githubusercontent.com/GoodBoyDigital/pixi.js/master/bin/pixi.js",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span class=\"ze-content \" contenteditable=\"\">https://raw.githubusercontent.com/GoodBoyDigital/pixi.js/master/bin/pixi.js</span>"
+        },
+        {
+            "id": 2,
+            "tagName": "script",
+            "nInputs": 2,
+            "nOutputs": 1,
+            "top": "156px",
+            "left": "0px",
+            "width": "",
+            "value": "in2.stage = new PIXI.Stage(0xFFFFFF)",
+            "innerHTML": ""
+        },
+        {
+            "id": 3,
+            "tagName": "div",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "4px",
+            "left": "724px",
+            "width": "",
+            "value": "<br>",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <div class=\"ze-content \" contenteditable=\"\"><br></div>"
+        },
+        {
+            "id": 4,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "114px",
+            "left": "0px",
+            "width": "",
+            "value": "in1.renderer = PIXI.autoDetectRenderer(400, 300)",
+            "innerHTML": ""
+        },
+        {
+            "id": 5,
+            "tagName": "div",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "32px",
+            "left": "233px",
+            "width": "",
+            "value": "data",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <div class=\"ze-content \" contenteditable=\"\">data</div>"
+        },
+        {
+            "id": 6,
+            "tagName": "script",
+            "nInputs": 3,
+            "nOutputs": 1,
+            "top": "199px",
+            "left": "0px",
+            "width": "",
+            "value": "in3.appendChild(in2.renderer.view)",
+            "innerHTML": ""
+        },
+        {
+            "id": 7,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "232px",
+            "left": "56px",
+            "width": "",
+            "value": "https://avatars1.githubusercontent.com/u/6049293",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span class=\"ze-content \" contenteditable=\"\">https://avatars1.githubusercontent.com/u/6049293</span>"
+        },
+        {
+            "id": 8,
+            "tagName": "script",
+            "nInputs": 3,
+            "nOutputs": 1,
+            "top": "270px",
+            "left": "0px",
+            "width": "",
+            "value": "var texture = PIXI.Texture.fromImage(in3);\nvar avatar = new PIXI.Sprite(texture);\navatar.anchor = {x: 0.5, y: 0.5};\navatar.position = {x: 200, y: 150};\navatar.scale = {x:0.5, y:0.5};\nin2.stage.addChild(avatar);\nin2.avatar = avatar;\n",
+            "innerHTML": ""
+        },
+        {
+            "id": 9,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "138px",
+            "left": "367px",
+            "width": "",
+            "value": "in1.avatar.rotation += 0.01;\nin1.renderer.render(in1.stage);\n",
+            "innerHTML": ""
+        },
+        {
+            "id": 10,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "101px",
+            "left": "366px",
+            "width": "",
+            "value": "window.setInterval(sendToOutput, 50);",
+            "innerHTML": ""
+        },
+        {
+            "id": 11,
+            "tagName": "button",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "0px",
+            "left": "0px",
+            "width": "",
+            "value": "load pixi",
+            "innerHTML": ""
+        },
+        {
+            "id": 12,
+            "tagName": "button",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "74px",
+            "left": "0px",
+            "width": "",
+            "value": "init",
+            "innerHTML": ""
+        },
+        {
+            "id": 13,
+            "tagName": "button",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "62px",
+            "left": "366px",
+            "width": "",
+            "value": "go",
+            "innerHTML": ""
+        }
+    ],
+    "links": [
+        {
+            "input": {
+                "block": 0,
+                "port": 0
+            },
+            "output": {
+                "block": 1,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 0,
+                "port": 0
+            },
+            "output": {
+                "block": 11,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 2,
+                "port": 0
+            },
+            "output": {
+                "block": 4,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 2,
+                "port": 1
+            },
+            "output": {
+                "block": 5,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 4,
+                "port": 0
+            },
+            "output": {
+                "block": 5,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 4,
+                "port": 0
+            },
+            "output": {
+                "block": 12,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 6,
+                "port": 0
+            },
+            "output": {
+                "block": 2,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 6,
+                "port": 1
+            },
+            "output": {
+                "block": 5,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 6,
+                "port": 2
+            },
+            "output": {
+                "block": 3,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 8,
+                "port": 0
+            },
+            "output": {
+                "block": 6,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 8,
+                "port": 1
+            },
+            "output": {
+                "block": 5,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 8,
+                "port": 2
+            },
+            "output": {
+                "block": 7,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 9,
+                "port": 0
+            },
+            "output": {
+                "block": 5,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 9,
+                "port": 0
+            },
+            "output": {
+                "block": 10,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 10,
+                "port": 0
+            },
+            "output": {
+                "block": 13,
+                "port": 0
+            }
+        }
+    ],
+    "presentation": {
+        "innerHTML": ""
+    }
+}
