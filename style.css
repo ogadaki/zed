@@ -24,6 +24,14 @@ script, tt {
     color: #bbb;
 }
 
+z-block:not(.comment) .content-container > span.ze-content {
+    font-size: smaller;
+}
+
+z-block:not(.comment) .content-container > div.ze-content {
+    font-size: smaller;
+}
+
 /* Web components styling that can't be done during their definition */
 z-block.current.cursor-displayed #main {
     border-left-color: #e66;
