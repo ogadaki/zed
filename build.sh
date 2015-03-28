@@ -1,3 +1,3 @@
 #!/bin/bash
 
-browserify --debug lib/app.js webcomponents/*.js -o lib/bundle.js
+browserify --debug lib/app.js webcomponents/*.js -o lib/bundle.js -v
