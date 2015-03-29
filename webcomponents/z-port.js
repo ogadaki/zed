@@ -7,10 +7,10 @@ var selector = require('../lib/selector');
 
 var tagName = 'z-port';
 
-var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
+var htmlTemplate = `
     <span class="port-key">a</span>
     <div class="selector"></div>
-*/});
+`;
 var template = utils.dom.createFragment(htmlTemplate);
 
 var cssAsJson = {

@@ -8,7 +8,7 @@ var selector = require('../lib/selector');
 
 var tagName = 'z-block';
 
-var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
+var htmlTemplate = `
     <div class="ports-container inputs">
         <content select="z-port.input"></content>
     </div>
@@ -21,7 +21,7 @@ var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
     <div class="ports-container outputs">
         <content select="z-port.output"></content>
     </div>
-*/});
+`;
 var template = utils.dom.createFragment(htmlTemplate);
 
 var cssAsJson = {

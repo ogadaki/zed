@@ -17,11 +17,11 @@ var _ = require('../externals/lodash');
 
 var tagName = 'z-link';
 
-var htmlTemplate = utils.stringFromCommentInFunction(function () {/*
+var htmlTemplate = `
     <div>
         <div class="selector"></div>
     </div>
-*/});
+`;
 var template = utils.dom.createFragment(htmlTemplate);
 
 var cssAsJson = {
