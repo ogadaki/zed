@@ -44,8 +44,7 @@ var cssAsJson = {
         'border-right-color': 'rgba(1, 1, 1, 0)'
     },
     '.content-container': {
-        'background': 'white',
-        'boxShadow': '2px 2px 3px 0px #dfdfdf'
+        'background': '#eee'
     },
     '.content-container > script': {
         'padding': '4px 8px 2px 8px'

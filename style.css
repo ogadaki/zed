@@ -94,7 +94,7 @@ z-link.selected {
     padding: 3px;
     font-family: Consolas, monospace;
     font-size: 12px;
-    background: #f0f0f0;
+    /*background: #f0f0f0;*/
     padding: 10px;
     margin-top: 10px;
     /* In case message is empty. */
@@ -120,6 +120,7 @@ z-link.selected {
     background: #f0f0f0;
     padding: 10px;
     margin-top: 10px;
+    float: right;
     clear: both;
 }
 
@@ -150,7 +151,6 @@ z-link.selected {
     position: relative;
 }
 #edit {
-    background: #f0f0f0;
     padding: 15px;
 }
 

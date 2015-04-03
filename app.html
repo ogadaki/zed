@@ -44,39 +44,22 @@
 
     </head>
 
-    <body>
+    <body class="help-hidden">
 
         <div>
             <div id="workbench" style="float: left;">
                 <div style="overflow: hidden;">
                     <div style="float: left; width: 70%">
-                        <div class="button-bar">
-                            <button onclick="app.commands.remove()" onfocus="this.blur()">remove</button>
-                            |
-                            <button onclick="app.commands.addButton()" onfocus="this.blur()">button</button>
-                            <button onclick="app.commands.addScript()" onfocus="this.blur()">script</button>
-                            <button onclick="app.commands.addText()" onfocus="this.blur()">text</button>
-                            <button onclick="app.commands.addNumber()" onfocus="this.blur()">number</button>
-                            |
-                            <button onclick="app.commands.edit()" onfocus="this.blur()">edit current block</button>
-                            |
-                            <button onclick="app.commands.goToCommandLine()" onfocus="this.blur()">command line</button>
-                            |
-                            <button onclick="app.commands.clear()" onfocus="this.blur()">clear patch</button>
-                            <button onclick="app.commands.save('file', 'patch.zed')" onfocus="this.blur()">export patch</button>
-                            <span>
-                                <button style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import patch</button>
-                                <input type="file" style="display: none;" onchange="app.commands.load(event.target.files[0]);"/>
-                            </span>
-                        </div>
 
                         <div id="edit" onclick="app.view.switchMode('edit')">
                             <div id="patch" style='width500px;height:410px' onclick="window.selector.unselect()">
                             </div>
                         </div>
+
                         <div id="message-div">
                             <span id="message"></span>
                         </div>
+
                     </div>
 
                     <div style="float: right; width: 29%;" onclick="app.view.switchMode('presentation')">
@@ -100,6 +83,22 @@
 
                 <div id="command-line-frame" class="command-line"
                     onclick="app.commands.goToCommandLine();"></div>
+
+                <div class="button-bar" style="margin-top: 10px;">
+                    <button onclick="app.commands.remove()" onfocus="this.blur()">remove</button>
+                    |
+                    <button onclick="app.commands.addButton()" onfocus="this.blur()">button</button>
+                    <button onclick="app.commands.addScript()" onfocus="this.blur()">script</button>
+                    <button onclick="app.commands.addText()" onfocus="this.blur()">text</button>
+                    <button onclick="app.commands.addNumber()" onfocus="this.blur()">number</button>
+                    |
+                    <button onclick="app.commands.clear()" onfocus="this.blur()">clear</button>
+                    <button onclick="app.commands.save('file', 'patch.zed')" onfocus="this.blur()">export</button>
+                    <span>
+                        <button style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import</button>
+                        <input type="file" style="display: none;" onchange="app.commands.load(event.target.files[0]);"/>
+                    </span>
+                </div>
 
                 <div style="color:#aaa;font-size:smaller;">
                     zed source codes are on <a style="color:#666" href="https://github.com/nnodot/zed">github</a>
