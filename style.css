@@ -1,6 +1,7 @@
 /* General */
 body {
     font-family: sans-serif;
+    background: #444;
 }
 
 button {
@@ -87,6 +88,13 @@ z-link.selected {
     -webkit-box-shadow: 0px 0px 0px 1px #e66;
     -moz-box-shadow: 0px 0px 0px 1px #e66;
     box-shadow: 0px 0px 0px 1px #e66;
+}
+
+/* Workbench */
+#workbench {
+    padding: 10px;
+    background: white;
+    float: left;
 }
 
 /* Patch message */

@@ -47,12 +47,12 @@
     <body class="help-hidden">
 
         <div>
-            <div id="workbench" style="float: left;">
+            <div id="workbench" style="padding: 10px; background: white; float: left;">
                 <div style="overflow: hidden;">
                     <div style="float: left; width: 70%">
 
                         <div id="edit" onclick="app.view.switchMode('edit')">
-                            <div id="patch" style='width500px;height:810px' onclick="window.selector.unselect()">
+                            <div id="patch" style='width500px;height:795px' onclick="window.selector.unselect()">
                             </div>
                         </div>
 
@@ -68,8 +68,6 @@
                             |
                             <button id="lock-button" onclick="app.view.lock();" disabled>use</button>
                             <button id="unlock-button" onclick="app.view.unlock();">edit</button>
-                            |
-                            <button onclick="document.body.classList.toggle('help-hidden');">toggle help</button>
                         </div>
                         <div class="view-frame">
                             <center style="margin: 30px; color: #777;">View</center>
