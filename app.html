@@ -46,61 +46,57 @@
 
     <body>
 
-        <div>
-            <div id="workbench">
-                <div style="overflow: hidden;">
-                    <div style="float: left; width: 70%">
+        <div id="workbench">
 
-                        <div id="edit" onclick="app.view.switchMode('edit')">
-                            <div id="patch" style='width500px;height:95px' onclick="window.selector.unselect()">
-                            </div>
-                        </div>
-
-                        <div id="message-div">
-                            <span id="message"></span>
-                        </div>
-
-                    </div>
-
-                    <div style="float: right; width: 29%;" onclick="app.view.switchMode('presentation')">
-                        <div class="button-bar">
-                            <button onclick="app.view.insertBlockContentInSelection();">insert block</button>
-                            |
-                            <button id="lock-button" onclick="app.view.lock();" disabled>use</button>
-                            <button id="unlock-button" onclick="app.view.unlock();">edit</button>
-                        </div>
-                        <div class="view-frame">
-                            <center style="margin: 30px; color: #777;">View</center>
-                            <div id="presentation-div" style='height:300px'>
-                                <div id="presentation" style="min-height:19px;text-align:center;" onclick="app.view.selectElement(event)">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div id="edit" onclick="app.view.switchMode('edit')">
+                <div id="patch" onclick="window.selector.unselect()">
                 </div>
+            </div>
 
-                <div id="command-line-frame" class="command-line"
-                    onclick="app.commands.goToCommandLine();"></div>
+            <div id="message-div">
+                <span id="message"></span>
+            </div>
 
-                <div class="button-bar" style="margin-top: 10px;">
-                    <button onclick="app.commands.remove()" onfocus="this.blur()">remove</button>
+            <div id="command-line-frame">
+                <div id="command-line-terminal-wrapper" class="command-line"
+                    onclick="app.commands.goToCommandLine();">
+                </div>
+            </div>
+
+            <div id="view-window" onclick="app.view.switchMode('presentation')">
+                <div class="button-bar">
+                    <button onclick="app.view.insertBlockContentInSelection();">insert block</button>
                     |
-                    <button onclick="app.commands.addButton()" onfocus="this.blur()">button</button>
-                    <button onclick="app.commands.addScript()" onfocus="this.blur()">script</button>
-                    <button onclick="app.commands.addText()" onfocus="this.blur()">text</button>
-                    <button onclick="app.commands.addNumber()" onfocus="this.blur()">number</button>
-                    |
-                    <button onclick="app.commands.clear()" onfocus="this.blur()">clear</button>
-                    <button onclick="app.commands.save('file', 'patch.zed')" onfocus="this.blur()">export</button>
-                    <span>
-                        <button style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import</button>
-                        <input type="file" style="display: none;" onchange="app.commands.load(event.target.files[0]);"/>
-                    </span>
+                    <button id="lock-button" onclick="app.view.lock();" disabled>use</button>
+                    <button id="unlock-button" onclick="app.view.unlock();">edit</button>
                 </div>
+                <div class="view-frame">
+                    <center style="margin: 30px; color: #777;">View</center>
+                    <div id="presentation-div" style='height:300px'>
+                        <div id="presentation" style="min-height:19px;text-align:center;" onclick="app.view.selectElement(event)">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <div style="color:#aaa;font-size:smaller;">
-                    zed source codes are on <a style="color:#666" href="https://github.com/nnodot/zed">github</a>
-                </div>
+            <div id="link-to-github" style="color:#aaa;font-size:smaller;">
+                zed source codes are on <a style="color:#666" href="https://github.com/nnodot/zed">github</a>
+            </div>
+
+            <div id="main-button-bar" class="button-bar">
+                <button onclick="app.commands.remove()" onfocus="this.blur()">remove</button>
+                |
+                <button onclick="app.commands.addButton()" onfocus="this.blur()">button</button>
+                <button onclick="app.commands.addScript()" onfocus="this.blur()">script</button>
+                <button onclick="app.commands.addText()" onfocus="this.blur()">text</button>
+                <button onclick="app.commands.addNumber()" onfocus="this.blur()">number</button>
+                |
+                <button onclick="app.commands.clear()" onfocus="this.blur()">clear</button>
+                <button onclick="app.commands.save('file', 'patch.zed')" onfocus="this.blur()">export</button>
+                <span>
+                    <button style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import</button>
+                    <input type="file" style="display: none;" onchange="app.commands.load(event.target.files[0]);"/>
+                </span>
             </div>
 
         </div>

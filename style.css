@@ -4,6 +4,15 @@ body {
     background: #444;
 }
 
+html, body, #workbench {
+    height:100%;
+    margin:0px;
+    padding:0;
+}
+#workbench {
+    position:relative;
+}
+
 button {
     background: #444;
     padding: 3px;
@@ -90,24 +99,19 @@ z-link.selected {
     box-shadow: 0px 0px 0px 1px #e66;
 }
 
-/* Workbench */
-#workbench {
-    padding: 10px;
-    background: white;
-    float: left;
-    width: 99%;
-}
-
 /* Patch message */
 #message-div {
     padding: 3px;
     font-family: Consolas, monospace;
     font-size: 12px;
-    /*background: #f0f0f0;*/
     padding: 10px;
     margin-top: 10px;
     /* In case message is empty. */
     min-height: 1.1em;
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    z-index: 1000;
 }
 
 /* Command line frame */
@@ -119,26 +123,38 @@ z-link.selected {
     font-family: Consolas, monospace;
     font-size: 12px;
     background: #f0f0f0;
-    padding: 10px;
-    margin-top: 10px;
 }
 .command-line.focused {
     color: #aaa;
 }
+#command-line-terminal-wrapper {
+    position: relative;
+}
+
 #command-line-frame {
     background: #f0f0f0;
     padding: 10px;
-    margin-top: 10px;
-    float: right;
-    clear: both;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
 }
 
 /* Patch frame */
 #patch {
+    height: 100%;
     position: relative;
 }
 #edit {
     padding: 15px;
+    position: absolute;
+    top:10px;
+    bottom:10px;
+    left:10px;
+    right:10px;
+    background: white;
+    z-index: 900;
+    overflow: hidden;
 }
 
 /* View frame */
@@ -152,4 +168,26 @@ z-link.selected {
     margin: 20px;
     background: white;
     box-shadow: 2px 2px 3px 0px #dfdfdf;
+}
+#view-window {
+    width: 400px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+#link-to-github {
+    position: absolute;
+    right: 610px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#main-button-bar {
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    right: 430px;
+    z-index: 1000;
 }
