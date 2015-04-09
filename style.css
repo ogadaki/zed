@@ -95,6 +95,7 @@ z-link.selected {
     padding: 10px;
     background: white;
     float: left;
+    width: 99%;
 }
 
 /* Patch message */
@@ -132,28 +133,6 @@ z-link.selected {
     clear: both;
 }
 
-/* Help frame */
-#help {
-    margin-left: 10px;
-}
-#help-content {
-    font-size: smaller;
-    background: #eee;
-    padding: 15px;
-    color: #444;
-}
-#help-content tt {
-    color: black;
-    font-size: larger;
-    margin-right: 10px;
-}
-#help-bar {
-    padding: 5px;
-    background: #444;
-    color: #fff;
-    height: 23px;
-}
-
 /* Patch frame */
 #patch {
     position: relative;
@@ -173,19 +152,4 @@ z-link.selected {
     margin: 20px;
     background: white;
     box-shadow: 2px 2px 3px 0px #dfdfdf;
-}
-
-/* help frame toggle */
-#help {
-    width: 29%;
-}
-body.help-hidden * #help {
-    width: 0%;
-    visibility: hidden;
-}
-#workbench {
-    width: 70%;
-}
-body.help-hidden * #workbench {
-    width: 99%;
 }

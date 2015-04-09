@@ -44,7 +44,7 @@
 
     </head>
 
-    <body class="help-hidden">
+    <body>
 
         <div>
             <div id="workbench">
@@ -52,7 +52,7 @@
                     <div style="float: left; width: 70%">
 
                         <div id="edit" onclick="app.view.switchMode('edit')">
-                            <div id="patch" style='width500px;height:795px' onclick="window.selector.unselect()">
+                            <div id="patch" style='width500px;height:95px' onclick="window.selector.unselect()">
                             </div>
                         </div>
 
@@ -103,50 +103,6 @@
                 </div>
             </div>
 
-            <div id="help" style="float: left;">
-                <div id="help-bar">Keyboard shortcuts</div>
-                <div id="help-content">
-
-                    <p>
-                        <tt>j, k</tt> Move around.
-                    </p>
-                    <p>
-                        <tt>r</tt> Remove current block, link or port.
-                    </p>
-                    <p>
-                        <tt>g</tt> Go to block. The key for each block is then displayed in the block. Just type the key of the block you want to select.
-                    </p>
-                    <p>
-                        <tt>l</tt> Add a link between two ports. The key for each port is displayed next to it. Just type the keys for the two ports you want to link.
-                    </p>
-                    <br/>
-                    <p>
-                    Adding a new block just below the current block:
-                    </p>
-                    <p>
-                        <tt>a h b</tt> Add a button block.
-                    </p>
-                    <p>
-                        <tt>a h t</tt> Add a text block.
-                    </p>
-                    <p>
-                        <tt>a h n</tt> Add a number block.
-                    </p>
-                    <p>
-                        <tt>a h s</tt> Add a script block.
-                    </p>
-                    <br/>
-                    <p>
-                        <tt>e</tt> Edit content of the current block. When you're done type <tt style="margin-right:0px;">Esc</tt> to leave editing.
-                    </p>
-                    <p>
-                    <tt>c</tt> Go to the command line. While in the command line type <tt style="margin-right:0px;">Esc</tt> to leave it and go back to normal mode.
-                    </p>
-                    <p>
-                        <tt>space</tt> Fire the current block, i.e. execute and/or send event to its output.
-                    </p>
-                </div>
-            </div>
         </div>
 
     </body>
