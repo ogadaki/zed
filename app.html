@@ -44,7 +44,7 @@
 
     </head>
 
-    <body>
+    <body class="menu-hidden">
 
         <div id="workbench">
 
@@ -79,22 +79,25 @@
                 </div>
             </div>
 
-            <div id="link-to-github" style="color:#aaa;font-size:smaller;">
-                zed source codes are on <a style="color:#666" href="https://github.com/nnodot/zed">github</a>
+            <div id="link-to-github">
+                zed source codes are on <a style="color:#aaa" href="https://github.com/nnodot/zed">github</a>
             </div>
 
+            <button id="menu-button" onclick="body.classList.toggle('menu-hidden');">menu</button>
+
             <div id="main-button-bar" class="button-bar">
-                <button onclick="app.commands.remove()" onfocus="this.blur()">remove</button>
-                |
-                <button onclick="app.commands.addButton()" onfocus="this.blur()">button</button>
-                <button onclick="app.commands.addScript()" onfocus="this.blur()">script</button>
-                <button onclick="app.commands.addText()" onfocus="this.blur()">text</button>
-                <button onclick="app.commands.addNumber()" onfocus="this.blur()">number</button>
-                |
-                <button onclick="app.commands.clear()" onfocus="this.blur()">clear</button>
-                <button onclick="app.commands.save('file', 'patch.zed')" onfocus="this.blur()">export</button>
+                Actions <br/><br/>
+                <button onclick="app.commands.addButton()" onfocus="this.blur()">add button</button>
+                <button onclick="app.commands.addScript()" onfocus="this.blur()">add script</button>
+                <button onclick="app.commands.addText()" onfocus="this.blur()">add text</button>
+                <button onclick="app.commands.addNumber()" onfocus="this.blur()">add number</button>
+                </br>
+                <button onclick="app.commands.remove()" onfocus="this.blur()">delete</button>
+                <button onclick="app.commands.clear()" onfocus="this.blur()">clear all</button>
+                </br>
+                <button onclick="app.commands.save('file', 'patch.zed')" onfocus="this.blur()">export patch</button>
                 <span>
-                    <button style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import</button>
+                    <button style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import patch</button>
                     <input type="file" style="display: none;" onchange="app.commands.load(event.target.files[0]);"/>
                 </span>
             </div>

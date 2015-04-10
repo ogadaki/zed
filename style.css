@@ -101,15 +101,13 @@ z-link.selected {
 
 /* Patch message */
 #message-div {
-    padding: 3px;
+    color: white;
     font-family: Consolas, monospace;
     font-size: 12px;
-    padding: 10px;
-    margin-top: 10px;
     /* In case message is empty. */
     min-height: 1.1em;
-    bottom: 10px;
-    left: 10px;
+    bottom: 4px;
+    left: 130px;
     position: absolute;
     z-index: 1000;
 }
@@ -136,7 +134,7 @@ z-link.selected {
     padding: 10px;
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 35px;
     z-index: 1000;
 }
 
@@ -149,7 +147,7 @@ z-link.selected {
     padding: 15px;
     position: absolute;
     top:10px;
-    bottom:10px;
+    bottom:25px;
     left:10px;
     right:10px;
     background: white;
@@ -178,16 +176,29 @@ z-link.selected {
 }
 
 #link-to-github {
+    color: #888;
+    font-size: smaller;
     position: absolute;
-    right: 610px;
-    bottom: 20px;
+    right: 0px;
+    bottom: 4px;
     z-index: 1000;
+}
+
+body.menu-hidden #main-button-bar {
+    visibility: hidden;
 }
 
 #main-button-bar {
     position: absolute;
-    width: 300px;
-    top: 20px;
-    right: 430px;
+    /*width: 300px;*/
+    bottom: 30px;
+    left: 15px;
+    z-index: 1000;
+}
+
+#menu-button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
     z-index: 1000;
 }
