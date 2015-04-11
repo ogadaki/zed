@@ -202,3 +202,9 @@ body.menu-hidden #main-button-bar {
     left: 0px;
     z-index: 1000;
 }
+
+#close-menu-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
