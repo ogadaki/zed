@@ -52,7 +52,7 @@
             "top": "60px",
             "left": "120px",
             "width": "",
-            "value": "dest1.src = in1;",
+            "value": "out1.src = in1;",
             "innerHTML": ""
         },
         {

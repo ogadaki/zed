@@ -52,7 +52,7 @@
             "top": "261px",
             "left": "83px",
             "width": "",
-            "value": "dest1.src = in1.avatar_url",
+            "value": "out1.src = in1.avatar_url",
             "innerHTML": ""
         },
         {
