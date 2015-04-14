@@ -208,3 +208,7 @@ body.menu-hidden #main-button-bar {
     top: 0px;
     right: 0px;
 }
+
+.zed-data {
+    font-weight: bolder;
+}
