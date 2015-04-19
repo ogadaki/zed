@@ -95,7 +95,6 @@ var redraw = function (block) {
 
 var makeItDraggable = function (block) {
     var draggie = new Draggabilly(block, {
-        containment: true
     });
     draggie.externalAnimate = function () {
         redraw(block);
