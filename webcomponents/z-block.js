@@ -57,7 +57,7 @@ var cssAsJson = {
     },
     '.ports-container': {
         'padding': 0,
-        'minHeight': 3,
+        'minHeight': 2,
         'overflow': 'visible'
     },
     '.ports-container z-port': {
