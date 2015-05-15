@@ -1,0 +1,41 @@
+{
+    "blocks": [
+        {
+            "id": 0,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "641px",
+            "left": "-1px",
+            "width": "",
+            "value": "// Matter.js module aliases\nvar Engine = Matter.Engine,\n    World = Matter.World,\n    Bodies = Matter.Bodies;\n\n// create a Matter.js engine\nvar engine = Engine.create(in1);\n\n// create two boxes and a ground\nvar boxA = Bodies.rectangle(400, 200, 80, 80);\nvar boxB = Bodies.rectangle(450, 50, 80, 80);\nvar ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });\n\nvar mouseConstraint = Matter.MouseConstraint.create(engine);\nWorld.add(engine.world, mouseConstraint);\n\n// add all of the bodies to the world\nWorld.add(engine.world, [boxA, boxB, ground]);\n\n// run the engine\nEngine.run(engine);\n",
+            "innerHTML": ""
+        },
+        {
+            "id": 1,
+            "tagName": "div",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "4px",
+            "left": "1px",
+            "width": "",
+            "value": "",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <div class=\"ze-content \"></div>"
+        }
+    ],
+    "links": [
+        {
+            "input": {
+                "block": 0,
+                "port": 0
+            },
+            "output": {
+                "block": 1,
+                "port": 0
+            }
+        }
+    ],
+    "presentation": {
+        "innerHTML": ""
+    }
+}
