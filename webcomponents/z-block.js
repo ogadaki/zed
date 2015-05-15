@@ -94,9 +94,9 @@ var redraw = function (block) {
 };
 
 var makeItDraggable = function (block) {
-    var draggie = new Draggabilly(block, {
+    block.draggie = new Draggabilly(block, {
     });
-    draggie.externalAnimate = function () {
+    block.draggie.externalAnimate = function () {
         redraw(block);
     };
 };
@@ -198,6 +198,16 @@ var properties = {
                 'inputs': this.querySelectorAll('z-port.input'),
                 'outputs': this.querySelectorAll('z-port.output')
             };
+        }
+    },
+
+    draggable: {
+        set: function(value) {
+            if (value) {
+                this.draggie.enable();
+            } else {
+                this.draggie.disable();
+            }
         }
     }
 };
