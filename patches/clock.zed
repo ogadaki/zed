@@ -5,7 +5,7 @@
             "tagName": "script",
             "nInputs": 2,
             "nOutputs": 1,
-            "top": "437px",
+            "top": "367px",
             "left": "249px",
             "width": "",
             "value": "initDisplay(in2, 200, 200)",
@@ -13,17 +13,6 @@
         },
         {
             "id": 1,
-            "tagName": "span",
-            "nInputs": 0,
-            "nOutputs": 1,
-            "top": "1px",
-            "left": "-3px",
-            "width": "",
-            "value": "on load",
-            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">h</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">l</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">p</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on load</span>"
-        },
-        {
-            "id": 2,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -34,18 +23,18 @@
             "innerHTML": ""
         },
         {
-            "id": 3,
+            "id": 2,
             "tagName": "div",
             "nInputs": 1,
             "nOutputs": 1,
-            "top": "159px",
+            "top": "129px",
             "left": "631px",
             "width": "",
             "value": "<canvas height=\"200\" width=\"200\"></canvas>",
-            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <div class=\"ze-content\" style=\"width:200px;height:200px\" contenteditable=\"true\"><canvas height=\"200\" width=\"200\"></canvas></div>"
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">e</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <div class=\"ze-content\" style=\"width:200px;height:200px\" contenteditable=\"true\"><canvas height=\"200\" width=\"200\"></canvas></div>"
         },
         {
-            "id": 4,
+            "id": 3,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -56,7 +45,7 @@
             "innerHTML": ""
         },
         {
-            "id": 5,
+            "id": 4,
             "tagName": "span",
             "nInputs": 1,
             "nOutputs": 1,
@@ -64,10 +53,10 @@
             "left": "249px",
             "width": "",
             "value": "hours hand",
-            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">h</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            \n            <span class=\"ze-content zed-data\" contenteditable=\"true\">hours hand</span>"
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">h</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">i</span>\n            \n            <span class=\"ze-content zed-data\" contenteditable=\"true\">hours hand</span>"
         },
         {
-            "id": 6,
+            "id": 5,
             "tagName": "script",
             "nInputs": 2,
             "nOutputs": 1,
@@ -78,7 +67,7 @@
             "innerHTML": ""
         },
         {
-            "id": 7,
+            "id": 6,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -89,7 +78,7 @@
             "innerHTML": ""
         },
         {
-            "id": 8,
+            "id": 7,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -100,7 +89,7 @@
             "innerHTML": ""
         },
         {
-            "id": 9,
+            "id": 8,
             "tagName": "span",
             "nInputs": 1,
             "nOutputs": 1,
@@ -108,10 +97,10 @@
             "left": "517px",
             "width": "",
             "value": "minutes hand",
-            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-data\" contenteditable=\"true\">minutes hand</span>"
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">j</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">j</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">k</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-data\" contenteditable=\"true\">minutes hand</span>"
         },
         {
-            "id": 10,
+            "id": 9,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -122,7 +111,7 @@
             "innerHTML": ""
         },
         {
-            "id": 11,
+            "id": 10,
             "tagName": "script",
             "nInputs": 2,
             "nOutputs": 1,
@@ -133,7 +122,7 @@
             "innerHTML": ""
         },
         {
-            "id": 12,
+            "id": 11,
             "tagName": "span",
             "nInputs": 1,
             "nOutputs": 1,
@@ -141,10 +130,10 @@
             "left": "808px",
             "width": "",
             "value": "seconds hand",
-            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">o</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">o</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-data\" contenteditable=\"true\">seconds hand</span>"
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">m</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">n</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">o</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">o</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-data\" contenteditable=\"true\">seconds hand</span>"
         },
         {
-            "id": 13,
+            "id": 12,
             "tagName": "script",
             "nInputs": 2,
             "nOutputs": 1,
@@ -155,7 +144,7 @@
             "innerHTML": ""
         },
         {
-            "id": 14,
+            "id": 13,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -166,18 +155,18 @@
             "innerHTML": ""
         },
         {
-            "id": 15,
+            "id": 14,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
-            "top": "476px",
-            "left": "758px",
+            "top": "355px",
+            "left": "964px",
             "width": "",
             "value": "var circle = new PIXI.Graphics()\ncircle.lineStyle(2, 0xffffff, 1);\ncircle.drawCircle(100, 100, 80);\nin1.stage.addChild(circle);\n",
             "innerHTML": ""
         },
         {
-            "id": 16,
+            "id": 15,
             "tagName": "span",
             "nInputs": 0,
             "nOutputs": 1,
@@ -185,7 +174,117 @@
             "left": "249px",
             "width": "",
             "value": "on load",
-            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on load</span>"
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">q</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">q</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">r</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">r</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on load</span>"
+        },
+        {
+            "id": 16,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 0,
+            "top": "406px",
+            "left": "249px",
+            "width": "",
+            "value": "display ready",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">r</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">r</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">s</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">s</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">display ready</span>"
+        },
+        {
+            "id": 17,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "522px",
+            "left": "249px",
+            "width": "",
+            "value": "on display ready",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">s</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">s</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">t</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on display ready</span>"
+        },
+        {
+            "id": 18,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "324px",
+            "left": "964px",
+            "width": "",
+            "value": "on display ready",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">t</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">t</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">u</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on display ready</span>"
+        },
+        {
+            "id": 19,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "524px",
+            "left": "808px",
+            "width": "",
+            "value": "on display ready",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">u</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">u</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">v</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on display ready</span>"
+        },
+        {
+            "id": 20,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "524px",
+            "left": "517px",
+            "width": "",
+            "value": "on display ready",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">v</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">v</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on display ready</span>"
+        },
+        {
+            "id": 21,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "237px",
+            "left": "-2px",
+            "width": "",
+            "value": "on display ready",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">w</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">w</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on display ready</span>"
+        },
+        {
+            "id": 22,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 0,
+            "top": "436px",
+            "left": "-2px",
+            "width": "",
+            "value": "new time",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">x</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">x</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">new time</span>"
+        },
+        {
+            "id": 23,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "500px",
+            "left": "223px",
+            "width": "",
+            "value": "on new time",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">y</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on new time</span>"
+        },
+        {
+            "id": 24,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "500px",
+            "left": "491px",
+            "width": "",
+            "value": "on new time",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">z</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on new time</span>"
+        },
+        {
+            "id": 25,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "500px",
+            "left": "782px",
+            "width": "",
+            "value": "on new time",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">ab</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on new time</span>"
         }
     ],
     "links": [
@@ -195,7 +294,7 @@
                 "port": 0
             },
             "output": {
-                "block": 4,
+                "block": 3,
                 "port": 0
             }
         },
@@ -205,13 +304,153 @@
                 "port": 1
             },
             "output": {
-                "block": 3,
+                "block": 2,
                 "port": 0
             }
         },
         {
             "input": {
-                "block": 2,
+                "block": 1,
+                "port": 0
+            },
+            "output": {
+                "block": 21,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 3,
+                "port": 0
+            },
+            "output": {
+                "block": 15,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 4,
+                "port": 0
+            },
+            "output": {
+                "block": 6,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 5,
+                "port": 0
+            },
+            "output": {
+                "block": 23,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 5,
+                "port": 1
+            },
+            "output": {
+                "block": 4,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 6,
+                "port": 0
+            },
+            "output": {
+                "block": 17,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 7,
+                "port": 0
+            },
+            "output": {
+                "block": 20,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 8,
+                "port": 0
+            },
+            "output": {
+                "block": 7,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 9,
+                "port": 0
+            },
+            "output": {
+                "block": 19,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 10,
+                "port": 0
+            },
+            "output": {
+                "block": 24,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 10,
+                "port": 1
+            },
+            "output": {
+                "block": 8,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 11,
+                "port": 0
+            },
+            "output": {
+                "block": 9,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 12,
+                "port": 0
+            },
+            "output": {
+                "block": 25,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 12,
+                "port": 1
+            },
+            "output": {
+                "block": 11,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 13,
                 "port": 0
             },
             "output": {
@@ -221,48 +460,18 @@
         },
         {
             "input": {
-                "block": 4,
+                "block": 14,
                 "port": 0
             },
             "output": {
+                "block": 18,
+                "port": 0
+            }
+        },
+        {
+            "input": {
                 "block": 16,
                 "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 5,
-                "port": 0
-            },
-            "output": {
-                "block": 7,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 6,
-                "port": 0
-            },
-            "output": {
-                "block": 14,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 6,
-                "port": 1
-            },
-            "output": {
-                "block": 5,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 7,
-                "port": 0
             },
             "output": {
                 "block": 0,
@@ -271,101 +480,11 @@
         },
         {
             "input": {
-                "block": 8,
+                "block": 22,
                 "port": 0
             },
             "output": {
-                "block": 0,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 9,
-                "port": 0
-            },
-            "output": {
-                "block": 8,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 10,
-                "port": 0
-            },
-            "output": {
-                "block": 0,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 11,
-                "port": 0
-            },
-            "output": {
-                "block": 14,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 11,
-                "port": 1
-            },
-            "output": {
-                "block": 9,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 12,
-                "port": 0
-            },
-            "output": {
-                "block": 10,
-                "port": 0
-            }
-        },
-        {
-            "input": {
                 "block": 13,
-                "port": 0
-            },
-            "output": {
-                "block": 14,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 13,
-                "port": 1
-            },
-            "output": {
-                "block": 12,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 14,
-                "port": 0
-            },
-            "output": {
-                "block": 2,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 15,
-                "port": 0
-            },
-            "output": {
-                "block": 0,
                 "port": 0
             }
         }
