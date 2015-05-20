@@ -3,12 +3,12 @@
         {
             "id": 0,
             "tagName": "script",
-            "nInputs": 1,
+            "nInputs": 2,
             "nOutputs": 1,
-            "top": "641px",
+            "top": "341px",
             "left": "-1px",
             "width": "",
-            "value": "in1.innerHTML = '';\n\n// Matter.js module aliases\nvar Engine = Matter.Engine,\n    World = Matter.World,\n    Bodies = Matter.Bodies;\n\n// create a Matter.js engine\nvar engine = Engine.create(in1);\n\n// create two boxes and a ground\nvar boxA = Bodies.rectangle(400, 200, 80, 80);\nvar boxB = Bodies.rectangle(450, 50, 80, 80);\nvar ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });\n\nvar mouseConstraint = Matter.MouseConstraint.create(engine);\nWorld.add(engine.world, mouseConstraint);\n\n// add all of the bodies to the world\nWorld.add(engine.world, [boxA, boxB, ground]);\n\n// run the engine\nEngine.run(engine);\n",
+            "value": "in2.innerHTML = '';\n\nvar engine = Matter.Engine.create({render:{\n  element: in2,\n  options: {width: 400, height: 300, wireframes: false}\n}});\n\nvar ground = Matter.Bodies.rectangle(\n  200, 270, 250, 10, { isStatic: true }\n);\n\n//var mouseConstraint = Matter.MouseConstraint.create(engine);\n//Matter.World.add(engine.world, mouseConstraint);\n\n// add all of the bodies to the world\nMatter.World.add(engine.world, ground);\n\n// run the engine\nMatter.Engine.run(engine);\n\nreturn engine;\n",
             "innerHTML": ""
         },
         {
@@ -17,10 +17,65 @@
             "nInputs": 1,
             "nOutputs": 1,
             "top": "4px",
-            "left": "1px",
+            "left": "80px",
             "width": "",
-            "value": "",
-            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <div class=\"ze-content \"></div>"
+            "value": "<canvas style=\"background: rgb(250, 250, 250) none repeat scroll 0% 0% / contain ;\" height=\"300\" width=\"400\"></canvas>",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">c</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <div class=\"ze-content \" contenteditable=\"true\"><canvas style=\"background: rgb(250, 250, 250) none repeat scroll 0% 0% / contain ;\" height=\"300\" width=\"400\"></canvas></div>"
+        },
+        {
+            "id": 2,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "12px",
+            "left": "562px",
+            "width": "",
+            "value": "engine",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">d</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-data\" contenteditable=\"true\">engine</span>"
+        },
+        {
+            "id": 3,
+            "tagName": "script",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "58px",
+            "left": "562px",
+            "width": "",
+            "value": "var box = Matter.Bodies.rectangle(\n  Math.random()*400, 0, 25, 25\n);\nMatter.World.add(in1.world, box)\nreturn box;",
+            "innerHTML": ""
+        },
+        {
+            "id": 4,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "294px",
+            "left": "-1px",
+            "width": "",
+            "value": "on load",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">f</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">j</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">j</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-event\" contenteditable=\"true\">on load</span>"
+        },
+        {
+            "id": 5,
+            "tagName": "span",
+            "nInputs": 1,
+            "nOutputs": 1,
+            "top": "664px",
+            "left": "-1px",
+            "width": "",
+            "value": "engine",
+            "innerHTML": "<span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">g</span>\n            <span style=\"visibility: hidden;\" class=\"block-key\">a</span>\n            \n            <span class=\"ze-content zed-data\" contenteditable=\"true\">engine</span>"
+        },
+        {
+            "id": 6,
+            "tagName": "script",
+            "nInputs": 2,
+            "nOutputs": 1,
+            "top": "666px",
+            "left": "78px",
+            "width": "",
+            "value": "in2.addEventListener('click', function (event) {\n  var x = event.screenX\n    - in2.getBoundingClientRect().left;\n  Matter.World.add(\n    in1.world,\n    Matter.Bodies.rectangle(\n      x, 0, 50, 50\n    )\n  );\n});",
+            "innerHTML": ""
         }
     ],
     "links": [
@@ -28,6 +83,56 @@
             "input": {
                 "block": 0,
                 "port": 0
+            },
+            "output": {
+                "block": 4,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 0,
+                "port": 1
+            },
+            "output": {
+                "block": 1,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 3,
+                "port": 0
+            },
+            "output": {
+                "block": 2,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 5,
+                "port": 0
+            },
+            "output": {
+                "block": 0,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 6,
+                "port": 0
+            },
+            "output": {
+                "block": 0,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 6,
+                "port": 1
             },
             "output": {
                 "block": 1,
