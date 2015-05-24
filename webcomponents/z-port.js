@@ -19,7 +19,7 @@ var cssAsJson = {
     '': {
         'width': 10,
         'height': 2,
-        'background': '#ccc',
+        'background': '#ddd',
         'display': 'inline-block',
         'position': 'relative',
         'overflow': 'visible',

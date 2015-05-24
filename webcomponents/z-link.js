@@ -30,7 +30,7 @@ var cssAsJson = {
     '': {
         'position': 'absolute',
         'height': 1,
-        'background': '#aaa',
+        'background': '#ccc',
         'boxShadow': '0px 0px 3px 0px #dfdfdf'
     },
     'div.selector': {
