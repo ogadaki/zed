@@ -65,7 +65,7 @@
                 <div id="command-line-terminal-wrapper" class="command-line"
                     onclick="app.commands.goToCommandLine();">
                 </div>
-                <button class="close-button" onclick="app.commands.closeCommandLine()">&times;</button>
+                <button class="close-button" onclick="app.commands.closeCommandLine()" onfocus="this.blur()">&times;</button>
             </div>
 
             <div id="view-window" onclick="app.view.switchMode('presentation')">
@@ -111,7 +111,7 @@
                 </span>
                 </br>
                 <button onclick="app.commands.goToCommandLine()" onfocus="this.blur()">go to command line</button>
-                <button class="close-button" onclick="body.classList.toggle('menu-hidden');">&times;</button>
+                <button class="close-button" onclick="body.classList.toggle('menu-hidden');" onfocus="this.blur()">&times;</button>
             </div>
 
         </div>
