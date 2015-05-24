@@ -4,6 +4,9 @@ and non-programmers. How can we design an editor for programming tasks that
 won't afraid non-programmers and that programmers (at least some of them) will
 still find usable?
 
+It combines expressivness of visual representation with hackability of text
+editing.
+
 Check the [demo](http://nnodot.github.io/zed/app.html).
 
 It is a quick and dirty proof of concept, numerous features are missing, some
