@@ -127,6 +127,7 @@ z-link.selected {
 }
 #command-line-terminal-wrapper {
     position: relative;
+    visibility: hidden;
 }
 
 #command-line-frame {
@@ -211,10 +212,14 @@ body.menu-hidden #main-button-bar {
     z-index: 1000;
 }
 
-#close-menu-button {
+.close-button {
     position: absolute;
     top: 0px;
     right: 0px;
+}
+#command-line-frame > .close-button {
+    background: rgba(1,1,1,0);
+    color: black;
 }
 
 .zed-data {
