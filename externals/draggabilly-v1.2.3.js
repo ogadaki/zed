@@ -1,6 +1,3 @@
-// Modified version of draggabilly. Use diff with draggabilly v1.2.3 to see
-// what have been modified.
-
 /*!
  * Draggabilly PACKAGED v1.2.3
  * Make that shiz draggable
@@ -2174,9 +2171,6 @@ Draggabilly.prototype.animate = function() {
   }
 
   this.positionDrag();
-  try {
-      this.externalAnimate();
-  } catch(e) {};
 
   var _this = this;
   requestAnimationFrame( function animateFrame() {

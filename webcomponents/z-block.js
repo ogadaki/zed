@@ -100,6 +100,17 @@ var makeItDraggable = function (block) {
     block.draggie.externalAnimate = function () {
         redraw(block);
     };
+    block.draggie.on('staticClick', function (event) {
+        // TODO depends on the port's DOM wich might change.
+        if (event.target.parentNode.tagName === 'Z-PORT') {
+            // In that case we have clicked on the "selector" of a port and the
+            // action is to select it and not to do something with the block.
+            return;
+        }
+        // TODO don't use globals
+        window.setCurrentBlock(block);
+        window.app.commands.editBlock(block);
+    });
 };
 
 var properties = {
@@ -132,10 +143,6 @@ var properties = {
 
         this.content = this.querySelector('.ze-content');
 
-        // TODO move elsewhere
-        this.onclick = function () {
-            window.setCurrentBlock(that);
-        };
         this.redraw = redraw.bind(null, this);
         selector.setSelectable(this, true);
     }},
