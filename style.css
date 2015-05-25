@@ -28,6 +28,10 @@ script, tt {
     font-size: 12px;
 }
 
+a {
+    color: #46A;
+}
+
 .button-bar {
     padding: 5px;
     background: #444;
