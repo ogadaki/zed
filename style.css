@@ -116,6 +116,31 @@ z-link.selected {
     z-index: 1000;
 }
 
+/* Properties frame */
+#properties-frame {
+    background: #f0f0f0;
+    padding: 10px;
+    padding-top: 5px;
+    position: absolute;
+    right: 620px;
+    height: 144px;
+    width: 340px;
+    bottom: 35px;
+    z-index: 1000;
+    visibility: hidden;
+}
+#block-inner-html {
+    font-family: Consolas, "Andale Mono", Monaco, "Lucida Console", monospace;
+    font-size: 12px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #e1e8ed;
+    padding: 10px;
+    width: 318px;
+    height: 100px;
+    margin-top: 5px;
+}
+
 /* Command line frame */
 .prompt {
     color: #888;
@@ -222,6 +247,10 @@ body.menu-hidden #main-button-bar {
     right: 0px;
 }
 #command-line-frame > .close-button {
+    background: rgba(1,1,1,0);
+    color: black;
+}
+#properties-frame > .close-button {
     background: rgba(1,1,1,0);
     color: black;
 }

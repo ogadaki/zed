@@ -61,6 +61,14 @@
                 <span id="message"></span>
             </div>
 
+            <div id="properties-frame">
+                <div>
+                    <span style="font-size:smaller;">edit HTML content string</span>
+                    <div id="block-inner-html" oninput="app.commands.updateCurrentBlockContent()" contenteditable></div>
+                </div>
+                <button class="close-button" onclick="app.commands.closeProperties()" onfocus="this.blur()">&times;</button>
+            </div>
+
             <div id="command-line-frame">
                 <div id="command-line-terminal-wrapper" class="command-line"
                     onclick="app.commands.goToCommandLine();">
