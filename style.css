@@ -24,7 +24,7 @@ button:disabled {
 }
 
 script, tt {
-    font-family: Consolas, monospace;
+    font-family: Consolas, "Andale Mono", Monaco, "Lucida Console", monospace;
     font-size: 12px;
 }
 
