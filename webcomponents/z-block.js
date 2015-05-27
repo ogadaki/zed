@@ -14,9 +14,9 @@ var htmlTemplate = `
     </div>
     <div id="main">
         <div class="content-container">
-            <span class="block-key">a</span>
             <content></content>
         </div>
+        <span class="block-key">a</span>
     </div>
     <div class="ports-container outputs">
         <content select="z-port.output"></content>
@@ -216,6 +216,16 @@ var properties = {
             } else {
                 this.draggie.disable();
             }
+        }
+    },
+
+    contentInnerHTML: {
+        get: function () {
+            return this.querySelector('.content-container').innerHTML;
+        },
+        set: function (string) {
+            this.querySelector('.content-container').innerHTML = string;
+            this.content = this.querySelector('.ze-content');
         }
     }
 };
