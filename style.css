@@ -124,7 +124,7 @@ z-link.selected {
     position: absolute;
     right: 620px;
     height: 144px;
-    width: 340px;
+    width: 440px;
     bottom: 35px;
     z-index: 1000;
     visibility: hidden;
@@ -136,7 +136,7 @@ z-link.selected {
     background: white;
     border: 1px solid #e1e8ed;
     padding: 10px;
-    width: 318px;
+    width: 418px;
     height: 100px;
     margin-top: 5px;
 }
