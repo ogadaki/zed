@@ -13,15 +13,32 @@ html, body, #workbench {
     position:relative;
 }
 
-button {
+button.zed-button {
     background: #444;
     padding: 3px;
     color: #ddd;
     border: 0px;
 }
-button:disabled {
+button.zed-button:disabled {
     color: #888;
 }
+
+button:not(.zed-button) {
+    /*background: #fbfaff;*/
+    /*background: #f5f5f5;*/
+    /*background-image: -moz-linear-gradient(center top , #f5f5f5, #f1f1f1);*/
+    background-image: -moz-linear-gradient(center top , #fbfaff, #eaeaea);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    color: #444;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.45;
+    padding: 3px 7px;
+    text-align: center;
+}
+
 
 script, tt {
     font-family: Consolas, "Andale Mono", Monaco, "Lucida Console", monospace;
