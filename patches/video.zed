@@ -1,4 +1,6 @@
 {
+    "lock": true,
+    "viewOpened": true,
     "blocks": [
         {
             "id": 0,
@@ -97,7 +99,7 @@
             "left": "0px",
             "width": "",
             "value": "0",
-            "innerHTML": "<div>Moved to <span class=\"ze-content\" contenteditable=\"\">0</span> s</div>"
+            "innerHTML": "<div>Moved to <span class=\"ze-content\" contenteditable=\"false\">0</span> s</div>"
         },
         {
             "id": 9,
@@ -108,7 +110,7 @@
             "left": "120px",
             "width": "",
             "value": "http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4",
-            "innerHTML": "<div>URL: <input class=\"ze-content\" size=\"50\" value=\"http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4\"></div>"
+            "innerHTML": "<div>URL: <input class=\"ze-content\" size=\"50\" value=\"http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4\" contenteditable=\"false\"></div>"
         },
         {
             "id": 10,
@@ -119,7 +121,7 @@
             "left": "270px",
             "width": "",
             "value": "",
-            "innerHTML": "<video class=\"ze-content phantomed\" style=\"background:#ddd;width:150px;height:85px\"></video>"
+            "innerHTML": "<video class=\"ze-content phantomed\" style=\"background:#ddd;width:150px;height:85px\" contenteditable=\"false\"></video>"
         }
     ],
     "links": [
