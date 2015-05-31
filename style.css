@@ -251,7 +251,7 @@ body.menu-hidden #main-button-bar {
     z-index: 1000;
 }
 
-#menu-button {
+#menu-zone {
     position: absolute;
     bottom: 0px;
     left: 0px;

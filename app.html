@@ -97,7 +97,10 @@
                 zed source codes are on <a style="color:#aaa" href="https://github.com/nnodot/zed">github</a>
             </div>
 
-            <button class="zed-button" id="menu-button" onclick="body.classList.toggle('menu-hidden');">menu</button>
+            <div id= "menu-zone">
+                <button class="zed-button" id="menu-button" onclick="body.classList.toggle('menu-hidden');">menu</button>
+                <button id="toggle-lock-button" class="zed-button" onclick="app.commands.toggleLock()" onfocus="this.blur()">toggle lock</button>
+            </div>
 
             <div id="main-button-bar" class="button-bar">
                 Actions <br/><br/>
@@ -112,7 +115,6 @@
                 <button class="zed-button" onclick="app.commands.addInput()" onfocus="this.blur()">add input</button>
                 <button class="zed-button" onclick="app.commands.addOutput()" onfocus="this.blur()">add output</button>
                 </br>
-                <button class="zed-button" onclick="app.commands.toggleLock()" onfocus="this.blur()">toggle lock</button>
                 <button class="zed-button" onclick="app.commands.remove()" onfocus="this.blur()">delete</button>
                 <button class="zed-button" onclick="app.commands.clear()" onfocus="this.blur()">clear all</button>
                 </br>
