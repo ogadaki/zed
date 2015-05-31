@@ -1,158 +1,72 @@
 {
+    "lock": true,
+    "viewOpened": false,
     "blocks": [
         {
             "id": 0,
-            "tagName": "span",
+            "tagName": "div",
             "nInputs": 0,
             "nOutputs": 0,
-            "top": "130px",
-            "left": "153px",
+            "top": "406px",
+            "left": "310px",
             "width": "",
-            "value": "simple.zed",
-            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">simple.zed</span></button>"
+            "value": "<h3>clock</h3><p>An analog clock. It uses events, scripts and PIXI.js to draw the clock.</p><button style=\"float:right;\" onclick=\"app.commands.load('http', 'patches/clock.zed')\">open</button> ",
+            "innerHTML": "<div class=\"ze-content my-box\" contenteditable=\"false\"><h3>clock</h3><p>An analog clock. It uses events, scripts and PIXI.js to draw the clock.</p><button style=\"float:right;\" onclick=\"app.commands.load('http', 'patches/clock.zed')\">open</button> </div>"
         },
         {
             "id": 1,
-            "tagName": "span",
+            "tagName": "comment",
             "nInputs": 0,
             "nOutputs": 0,
-            "top": "228px",
-            "left": "151px",
+            "top": "41.283px",
+            "left": "50px",
             "width": "",
-            "value": "mult.zed",
-            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">mult.zed</span></button>"
+            "value": "<h2>some examples of programming with zed</h2>",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"false\"><h2>some examples of programming with zed</h2></span>"
         },
         {
             "id": 2,
-            "tagName": "span",
+            "tagName": "div",
             "nInputs": 0,
             "nOutputs": 0,
-            "top": "130px",
-            "left": "307px",
+            "top": "161px",
+            "left": "16px",
             "width": "",
-            "value": "video.zed",
-            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">video.zed</span></button>"
+            "value": "<h3>video</h3><p>A simple video player based on the HTML5 video element with a random position control.</p> <button style=\"float:right;\" onclick=\"app.commands.load('http', 'patches/video.zed')\">open</button>",
+            "innerHTML": "<div class=\"ze-content my-box\" contenteditable=\"false\"><h3>video</h3><p>A simple video player based on the HTML5 video element with a random position control.</p> <button style=\"float:right;\" onclick=\"app.commands.load('http', 'patches/video.zed')\">open</button></div>"
         },
         {
             "id": 3,
-            "tagName": "span",
+            "tagName": "div",
             "nInputs": 0,
             "nOutputs": 0,
-            "top": "227px",
-            "left": "306px",
+            "top": "7.65px",
+            "left": "520px",
             "width": "",
-            "value": "stats.zed",
-            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">stats.zed</span></button>"
+            "value": "CSS",
+            "innerHTML": "<div class=\"ze-content \" style=\"background:transparent; color:#aaa;\" contenteditable=\"false\">CSS</div><style>.my-box {width: 200px;margin-bottom:20px;height:160px;margin:20px;color:#444}</style>"
         },
         {
             "id": 4,
-            "tagName": "span",
+            "tagName": "div",
             "nInputs": 0,
             "nOutputs": 0,
-            "top": "323px",
-            "left": "308px",
+            "top": "406px",
+            "left": "16px",
             "width": "",
-            "value": "table.zed",
-            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">table.zed</span></button>"
+            "value": "<h3>weather</h3><p>Display some basic weather data for a city. It uses the Yahoo API.</p> <button style=\"float:right;\" onclick=\"app.commands.load('http', \n'patches/weather.zed')\">open</button>",
+            "innerHTML": "<div class=\"ze-content my-box\" contenteditable=\"false\"><h3>weather</h3><p>Display some basic weather data for a city. It uses the Yahoo API.</p> <button style=\"float:right;\" onclick=\"app.commands.load('http', \n'patches/weather.zed')\">open</button></div>"
         },
         {
             "id": 5,
-            "tagName": "span",
+            "tagName": "div",
             "nInputs": 0,
             "nOutputs": 0,
-            "top": "326px",
-            "left": "138px",
+            "top": "161px",
+            "left": "310px",
             "width": "",
-            "value": "promise.zed",
-            "innerHTML": "<button onclick=\"app.commands.load('http', 'patches/' + this.textContent)\"><span class=\"ze-content\" contenteditable=\"\">promise.zed</span></button>"
-        },
-        {
-            "id": 6,
-            "tagName": "comment",
-            "nInputs": 0,
-            "nOutputs": 0,
-            "top": "114px",
-            "left": "414px",
-            "width": "",
-            "value": "<span class=\"ze-content \" contenteditable=\"\">A patch that handles a video<br>element and uses its parameters<br>and actions (play, pause)</span>",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\"><span class=\"ze-content \" contenteditable=\"\">A patch that handles a video<br>element and uses its parameters<br>and actions (play, pause)</span></span>"
-        },
-        {
-            "id": 7,
-            "tagName": "comment",
-            "nInputs": 0,
-            "nOutputs": 0,
-            "top": "52px",
-            "left": "222px",
-            "width": "",
-            "value": "<span class=\"ze-content \" contenteditable=\"\">click to open<br></span>",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\"><span class=\"ze-content \" contenteditable=\"\">click to open<br></span></span>"
-        },
-        {
-            "id": 8,
-            "tagName": "comment",
-            "nInputs": 0,
-            "nOutputs": 0,
-            "top": "18px",
-            "left": "145px",
-            "width": "",
-            "value": "<span class=\"ze-content \" contenteditable=\"\">Here are some examples of patches</span>",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\"><span class=\"ze-content \" contenteditable=\"\">Here are some examples of patches</span></span>"
-        },
-        {
-            "id": 9,
-            "tagName": "comment",
-            "nInputs": 0,
-            "nOutputs": 0,
-            "top": "119px",
-            "left": "0px",
-            "width": "",
-            "value": "<span class=\"ze-content \" contenteditable=\"\">First, a very simple<br>one that uses basic<br>blocks</span>",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\"><span class=\"ze-content \" contenteditable=\"\">First, a very simple<br>one that uses basic<br>blocks</span></span>"
-        },
-        {
-            "id": 10,
-            "tagName": "comment",
-            "nInputs": 0,
-            "nOutputs": 0,
-            "top": "214px",
-            "left": "0px",
-            "width": "",
-            "value": "<span class=\"ze-content \" contenteditable=\"\">One with multiple<br><span class=\"ze-content \" contenteditable=\"\">inputs </span>and outputs<br>for a script block</span>",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\"><span class=\"ze-content \" contenteditable=\"\">One with multiple<br><span class=\"ze-content \" contenteditable=\"\">inputs </span>and outputs<br>for a script block</span></span>"
-        },
-        {
-            "id": 11,
-            "tagName": "comment",
-            "nInputs": 0,
-            "nOutputs": 0,
-            "top": "312px",
-            "left": "0px",
-            "width": "",
-            "value": "Script blocks can<br>return JavaScript<br>promises",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">Script blocks can<br>return JavaScript<br>promises</span>"
-        },
-        {
-            "id": 12,
-            "tagName": "comment",
-            "nInputs": 0,
-            "nOutputs": 0,
-            "top": "208px",
-            "left": "408px",
-            "width": "",
-            "value": "Use script blocks to generate<br>some random time series and<br>display it as a graph with<br>the gRaphael library",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">Use script blocks to generate<br>some random time series and<br>display it as a graph with<br>the gRaphael library</span>"
-        },
-        {
-            "id": 13,
-            "tagName": "comment",
-            "nInputs": 0,
-            "nOutputs": 0,
-            "top": "322px",
-            "left": "410px",
-            "width": "",
-            "value": "First attempt to use some<br>table HTML element",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"\">First attempt to use some<br>table HTML element</span>"
+            "value": "<h3>graph</h3><p>Generate some random time series and display it as a \ngraph with the gRaphael library.</p><button style=\"float:right;\" onclick=\"app.commands.load('http', \n'patches/stats.zed')\">open</button> ",
+            "innerHTML": "<div class=\"ze-content my-box\" contenteditable=\"false\"><h3>graph</h3><p>Generate some random time series and display it as a \ngraph with the gRaphael library.</p><button style=\"float:right;\" onclick=\"app.commands.load('http', \n'patches/stats.zed')\">open</button> </div>"
         }
     ],
     "links": [],
