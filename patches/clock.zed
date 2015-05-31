@@ -43,7 +43,7 @@
             "top": "31px",
             "left": "889px",
             "width": "",
-            "value": "createHand = function (display, length, width) {\n  width = width || 3;\n  var hand = new PIXI.Graphics();\n\n  hand.beginFill(0xffffff);\n  hand.lineStyle(1, 0xffffff, 1);\n\n  hand.moveTo(-width, 0);\n  hand.lineTo(0, length);\n  hand.lineTo(width, 0);\n  hand.lineTo(0, -15);\n  hand.endFill();\n\n  hand.anchor = {x: 0.5, y: 0};\n  hand.position = {x: 100, y: 100};\n  hand.rotation = Math.PI;\n\n  display.stage.addChild(hand);\n\n  return hand;\n};\n",
+            "value": "createHand = function (display, length, width) {\n  width = width || 6;\n  var hand = new PIXI.Graphics();\n\n  hand.beginFill(0xffffff);\n  hand.lineStyle(1, 0xffffff, 1);\n\n  hand.moveTo(-width/2, 0);\n  hand.lineTo(0, length);\n  hand.lineTo(width/2, 0);\n  hand.lineTo(0, -15);\n  hand.endFill();\n\n  hand.anchor = {x: 0.5, y: 0};\n  hand.position = {x: 100, y: 100};\n  hand.rotation = Math.PI;\n\n  display.stage.addChild(hand);\n\n  return hand;\n};\n",
             "innerHTML": ""
         },
         {
@@ -109,7 +109,7 @@
             "top": "207px",
             "left": "678px",
             "width": "",
-            "value": "createHand(in1, 70, 1)",
+            "value": "createHand(in1, 70, 2)",
             "innerHTML": ""
         },
         {
@@ -384,8 +384,8 @@
             "top": "31px",
             "left": "1252px",
             "width": "",
-            "value": "Parameters of createHand:<br><br>display: the pixi display where<br>to draw the hand<br><br>length: the length of the hand<br>in pixels (from the center of<br>clock)<br><br>width: the half width of the<br>hand in pixels (optional,<br>default to 3 pixels)<br>",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"false\">Parameters of createHand:<br><br>display: the pixi display where<br>to draw the hand<br><br>length: the length of the hand<br>in pixels (from the center of<br>clock)<br><br>width: the half width of the<br>hand in pixels (optional,<br>default to 3 pixels)<br></span>"
+            "value": "Parameters of createHand:<br><br>display: the pixi display where<br>to draw the hand<br><br>length: the length of the hand<br>in pixels (from the center of<br>clock)<br><br>width: the width of the<br>hand in pixels (optional,<br>default to 6 pixels)<br>",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"false\">Parameters of createHand:<br><br>display: the pixi display where<br>to draw the hand<br><br>length: the length of the hand<br>in pixels (from the center of<br>clock)<br><br>width: the width of the<br>hand in pixels (optional,<br>default to 6 pixels)<br></span>"
         },
         {
             "id": 35,

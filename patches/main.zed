@@ -21,8 +21,8 @@
             "top": "41.283px",
             "left": "50px",
             "width": "",
-            "value": "<h2>some examples of programming with zed</h2>",
-            "innerHTML": "<span class=\"ze-content \" contenteditable=\"false\"><h2>some examples of programming with zed</h2></span>"
+            "value": "<h2>Some examples of programming with zed</h2>",
+            "innerHTML": "<span class=\"ze-content \" contenteditable=\"false\"><h2>Some examples of programming with zed</h2></span>"
         },
         {
             "id": 2,
