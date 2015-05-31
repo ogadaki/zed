@@ -123,6 +123,7 @@
                     <button class="zed-button" style="display: inline-block;" onclick="this.parentNode.querySelector('input').click()">import patch</button>
                     <input type="file" style="display: none;" onchange="app.commands.load(event.target.files[0]);"/>
                 </span>
+                <button class="zed-button" onclick="app.commands.load('http', 'patches/main.zed')" onfocus="this.blur()">open main patch</button>
                 </br>
                 <button class="zed-button" onclick="app.commands.goToCommandLine()" onfocus="this.blur()">go to command line</button>
                 <button class="zed-button" onclick="app.commands.editHtml()" onfocus="this.blur()">open html editor</button>
