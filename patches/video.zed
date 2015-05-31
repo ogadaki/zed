@@ -7,17 +7,6 @@
             "tagName": "button",
             "nInputs": 0,
             "nOutputs": 1,
-            "top": "0px",
-            "left": "0px",
-            "width": "",
-            "value": "load video",
-            "innerHTML": ""
-        },
-        {
-            "id": 1,
-            "tagName": "button",
-            "nInputs": 0,
-            "nOutputs": 1,
             "top": "280px",
             "left": "310px",
             "width": "",
@@ -25,7 +14,7 @@
             "innerHTML": ""
         },
         {
-            "id": 2,
+            "id": 1,
             "tagName": "button",
             "nInputs": 0,
             "nOutputs": 1,
@@ -36,7 +25,7 @@
             "innerHTML": ""
         },
         {
-            "id": 3,
+            "id": 2,
             "tagName": "button",
             "nInputs": 0,
             "nOutputs": 1,
@@ -47,18 +36,18 @@
             "innerHTML": ""
         },
         {
-            "id": 4,
+            "id": 3,
             "tagName": "script",
-            "nInputs": 1,
+            "nInputs": 2,
             "nOutputs": 1,
             "top": "60px",
-            "left": "120px",
+            "left": "94px",
             "width": "",
-            "value": "out1.src = in1;",
+            "value": "out1.src = in2;",
             "innerHTML": ""
         },
         {
-            "id": 5,
+            "id": 4,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -69,7 +58,7 @@
             "innerHTML": ""
         },
         {
-            "id": 6,
+            "id": 5,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -80,7 +69,7 @@
             "innerHTML": ""
         },
         {
-            "id": 7,
+            "id": 6,
             "tagName": "script",
             "nInputs": 1,
             "nOutputs": 1,
@@ -91,7 +80,7 @@
             "innerHTML": ""
         },
         {
-            "id": 8,
+            "id": 7,
             "tagName": "span",
             "nInputs": 1,
             "nOutputs": 0,
@@ -102,7 +91,7 @@
             "innerHTML": "<div>Moved to <span class=\"ze-content\" contenteditable=\"false\">0</span> s</div>"
         },
         {
-            "id": 9,
+            "id": 8,
             "tagName": "input",
             "nInputs": 0,
             "nOutputs": 1,
@@ -113,7 +102,7 @@
             "innerHTML": "<div>URL: <input class=\"ze-content\" size=\"50\" value=\"http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4\" contenteditable=\"false\"></div>"
         },
         {
-            "id": 10,
+            "id": 9,
             "tagName": "video",
             "nInputs": 1,
             "nOutputs": 1,
@@ -121,10 +110,41 @@
             "left": "270px",
             "width": "",
             "value": "",
-            "innerHTML": "<video class=\"ze-content phantomed\" style=\"background:#ddd;width:150px;height:85px\" contenteditable=\"false\"></video>"
+            "innerHTML": "<video src=\"http://craftymind.com/factory/html5video/BigBuckBunny_640x360.mp4\" class=\"ze-content phantomed\" style=\"background:#ddd;width:150px;height:85px\" contenteditable=\"false\"></video>"
+        },
+        {
+            "id": 10,
+            "tagName": "span",
+            "nInputs": 0,
+            "nOutputs": 1,
+            "top": "9.85px",
+            "left": "30px",
+            "width": "",
+            "value": "on load",
+            "innerHTML": "<span class=\"ze-content zed-event\" contenteditable=\"false\">on load</span>"
         }
     ],
     "links": [
+        {
+            "input": {
+                "block": 3,
+                "port": 0
+            },
+            "output": {
+                "block": 10,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 3,
+                "port": 1
+            },
+            "output": {
+                "block": 8,
+                "port": 0
+            }
+        },
         {
             "input": {
                 "block": 4,
@@ -161,7 +181,7 @@
                 "port": 0
             },
             "output": {
-                "block": 10,
+                "block": 9,
                 "port": 0
             }
         },
@@ -181,52 +201,32 @@
                 "port": 0
             },
             "output": {
-                "block": 10,
+                "block": 9,
                 "port": 0
             }
         },
         {
             "input": {
                 "block": 7,
+                "port": 0
+            },
+            "output": {
+                "block": 6,
+                "port": 0
+            }
+        },
+        {
+            "input": {
+                "block": 9,
                 "port": 0
             },
             "output": {
                 "block": 3,
                 "port": 0
             }
-        },
-        {
-            "input": {
-                "block": 7,
-                "port": 0
-            },
-            "output": {
-                "block": 10,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 8,
-                "port": 0
-            },
-            "output": {
-                "block": 7,
-                "port": 0
-            }
-        },
-        {
-            "input": {
-                "block": 10,
-                "port": 0
-            },
-            "output": {
-                "block": 4,
-                "port": 0
-            }
         }
     ],
     "presentation": {
-        "innerHTML": "\n                                    My random video player\n                                    <div class=\"to-phantom\" data-id-to-phantom=\"button-l\"><button data-index-to-phantom=\"0\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">load video</button></div>\n                                    <div class=\"to-phantom\" data-id-to-phantom=\"video-a\"><video data-index-to-phantom=\"10\" class=\"ze-content phantom\" style=\"background:#ddd;width:150px;height:85px\" contenteditable=\"false\"></video></div>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-p\"><button data-index-to-phantom=\"1\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">play</button></span>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-s\"><button data-index-to-phantom=\"2\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">pause</button></span>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-r\"><button data-index-to-phantom=\"3\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">go to random position</button></span>\n                                "
+        "innerHTML": "\n                                    My random video player\n                                    <div class=\"to-phantom\" data-id-to-phantom=\"video-a\"><video data-index-to-phantom=\"9\" class=\"ze-content phantom\" style=\"background:#ddd;width:150px;height:85px\" contenteditable=\"false\"></video></div>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-p\"><button data-index-to-phantom=\"0\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">play</button></span>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-s\"><button data-index-to-phantom=\"1\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">pause</button></span>\n                                    <span class=\"to-phantom\" data-id-to-phantom=\"button-r\"><button data-index-to-phantom=\"2\" disabled=\"\" class=\"ze-content phantom\" onclick=\"sendEventToOutputPort(this)\" contenteditable=\"false\">go to random position</button></span>\n                                "
     }
 }
