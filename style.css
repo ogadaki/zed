@@ -128,7 +128,7 @@ z-link.selected {
     /* In case message is empty. */
     min-height: 1.1em;
     bottom: 4px;
-    left: 130px;
+    left: 230px;
     position: absolute;
     z-index: 1000;
 }
