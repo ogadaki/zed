@@ -135,7 +135,7 @@ z-link.selected {
 
 /* Properties frame */
 #properties-frame {
-    background: #f0f0f0;
+    background: #e2e6ed;
     padding: 10px;
     padding-top: 5px;
     position: absolute;
@@ -166,7 +166,7 @@ z-link.selected {
 .command-line {
     font-family: Consolas, monospace;
     font-size: 12px;
-    background: #f0f0f0;
+    background: white;
 }
 .command-line.focused {
     color: #aaa;
@@ -177,7 +177,8 @@ z-link.selected {
 }
 
 #command-line-frame {
-    background: #f0f0f0;
+    background: white;
+    border: 1px solid #e1e8ed;
     padding: 10px;
     position: absolute;
     right: 20px;
@@ -212,7 +213,7 @@ z-link.selected {
 
 /* View frame */
 .view-frame {
-    background: #f0f0f0;
+    background: #e2e6ed;
     padding: 10px;
     height: 463px;
 }
