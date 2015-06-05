@@ -274,7 +274,8 @@ body.menu-hidden #main-button-bar {
 }
 
 .zed-data {
-    font-weight: bolder;
+    background: #72769d;
+    color: #fff;
 }
 
 .zed-event {
