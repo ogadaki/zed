@@ -41,6 +41,7 @@ button:not(.zed-button) {
 
 
 script, tt {
+    color: #444;
     font-family: Consolas, "Andale Mono", Monaco, "Lucida Console", monospace;
     font-size: 12px;
 }
