@@ -45,13 +45,14 @@ var cssAsJson = {
     },
     '.content-container': {
         'background': 'white',
-        'border': '1px solid #e1e8ed'
+        'border': '1px solid #e1e8ed',
+        'overflow': 'hidden'
     },
     '.content-container > script': {
         'padding': '4px 8px 2px 8px'
     },
     '.content-container > span': {
-        'padding': '4px 8px 2px 8px'
+        'padding': '4px 8px 2px 8px',
     },
     '.content-container > div': {
         'padding': '4px 8px 2px 8px'
