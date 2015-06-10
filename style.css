@@ -284,3 +284,7 @@ body.menu-hidden #main-button-bar {
     background: #dde6ed;
 }
 
+.content-container > .view {
+    font-size: smaller;
+    font-weight: bolder;
+}
