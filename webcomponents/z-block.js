@@ -52,7 +52,7 @@ var cssAsJson = {
         'padding': '4px 8px 2px 8px'
     },
     '.content-container > span': {
-        'padding': '4px 8px 2px 8px',
+        'padding': '4px 8px 2px 8px'
     },
     '.content-container > div': {
         'padding': '4px 8px 2px 8px'
