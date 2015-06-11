@@ -285,6 +285,8 @@ body.menu-hidden #main-button-bar {
 }
 
 .content-container > .view {
+    background: rgb(249, 249, 250);
+    color: #32466d;
     font-size: smaller;
     font-weight: bolder;
 }
