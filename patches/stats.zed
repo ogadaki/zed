@@ -136,7 +136,7 @@
         },
         {
             "id": 12,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "9px",

@@ -26,7 +26,7 @@
         },
         {
             "id": 2,
-            "tagName": "span",
+            "tagName": "data",
             "nInputs": 1,
             "nOutputs": 1,
             "top": "12px",
@@ -48,7 +48,7 @@
         },
         {
             "id": 4,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "294px",
@@ -59,7 +59,7 @@
         },
         {
             "id": 5,
-            "tagName": "span",
+            "tagName": "data",
             "nInputs": 1,
             "nOutputs": 1,
             "top": "664px",

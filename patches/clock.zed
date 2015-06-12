@@ -48,7 +48,7 @@
         },
         {
             "id": 4,
-            "tagName": "span",
+            "tagName": "data",
             "nInputs": 1,
             "nOutputs": 1,
             "top": "482px",
@@ -92,7 +92,7 @@
         },
         {
             "id": 8,
-            "tagName": "span",
+            "tagName": "data",
             "nInputs": 1,
             "nOutputs": 1,
             "top": "479px",
@@ -125,7 +125,7 @@
         },
         {
             "id": 11,
-            "tagName": "span",
+            "tagName": "data",
             "nInputs": 1,
             "nOutputs": 1,
             "top": "247px",
@@ -169,7 +169,7 @@
         },
         {
             "id": 15,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "0px",
@@ -180,7 +180,7 @@
         },
         {
             "id": 16,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 1,
             "nOutputs": 0,
             "top": "326px",
@@ -191,7 +191,7 @@
         },
         {
             "id": 17,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "14px",
@@ -202,7 +202,7 @@
         },
         {
             "id": 18,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "427px",
@@ -213,7 +213,7 @@
         },
         {
             "id": 19,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 1,
             "nOutputs": 0,
             "top": "596px",
@@ -224,7 +224,7 @@
         },
         {
             "id": 20,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "450px",
@@ -235,7 +235,7 @@
         },
         {
             "id": 21,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "450px",
@@ -246,7 +246,7 @@
         },
         {
             "id": 22,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "450px",
@@ -257,7 +257,7 @@
         },
         {
             "id": 23,
-            "tagName": "span",
+            "tagName": "data",
             "nInputs": 1,
             "nOutputs": 1,
             "top": "481px",
@@ -268,7 +268,7 @@
         },
         {
             "id": 24,
-            "tagName": "span",
+            "tagName": "data",
             "nInputs": 1,
             "nOutputs": 1,
             "top": "243px",
@@ -279,7 +279,7 @@
         },
         {
             "id": 25,
-            "tagName": "span",
+            "tagName": "data",
             "nInputs": 1,
             "nOutputs": 1,
             "top": "241px",
@@ -290,7 +290,7 @@
         },
         {
             "id": 26,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "171px",
@@ -301,7 +301,7 @@
         },
         {
             "id": 27,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "173px",
@@ -312,7 +312,7 @@
         },
         {
             "id": 28,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "174px",
@@ -323,7 +323,7 @@
         },
         {
             "id": 29,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 1,
             "nOutputs": 0,
             "top": "388px",
@@ -334,7 +334,7 @@
         },
         {
             "id": 30,
-            "tagName": "span",
+            "tagName": "event",
             "nInputs": 0,
             "nOutputs": 1,
             "top": "4px",

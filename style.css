@@ -274,12 +274,12 @@ body.menu-hidden #main-button-bar {
     color: black;
 }
 
-.zed-data {
+z-block.zed-data .content-container {
     background: #5b709d;
     color: #fff;
 }
 
-.zed-event {
+z-block.zed-event .content-container {
     color: #32466d;
     background: #dde6ed;
 }
