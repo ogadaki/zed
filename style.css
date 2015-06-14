@@ -276,12 +276,18 @@ body.menu-hidden #main-button-bar {
 
 z-block.zed-data .content-container {
     background: #5b709d;
+    border-color: #5b709d;
     color: #fff;
 }
 
 z-block.zed-event .content-container {
     color: #32466d;
     background: #dde6ed;
+    border-color: #dde6ed;
+}
+
+z-block.button .content-container {
+    border-width: 0px;
 }
 
 .content-container > .view {
