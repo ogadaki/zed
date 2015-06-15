@@ -24,9 +24,6 @@ button.zed-button:disabled {
 }
 
 button:not(.zed-button) {
-    /*background: #fbfaff;*/
-    /*background: #f5f5f5;*/
-    /*background-image: -moz-linear-gradient(center top , #f5f5f5, #f1f1f1);*/
     background-image: -moz-linear-gradient(center top , #fbfaff, #eaeaea);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2px;
@@ -247,7 +244,6 @@ body.menu-hidden #main-button-bar {
 
 #main-button-bar {
     position: absolute;
-    /*width: 300px;*/
     bottom: 30px;
     left: 15px;
     z-index: 1000;
