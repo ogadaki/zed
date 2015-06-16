@@ -271,7 +271,7 @@ body.menu-hidden #main-button-bar {
 }
 
 z-block.zed-data .content-container {
-    background: #5b709d;
+    background: #6b80ad;
     border-color: #5b709d;
     color: #fff;
 }
@@ -279,7 +279,7 @@ z-block.zed-data .content-container {
 z-block.zed-event .content-container {
     color: #32466d;
     background: #dde6ed;
-    border-color: #dde6ed;
+    border-color: #cadae0;
 }
 
 z-block.button .content-container {
