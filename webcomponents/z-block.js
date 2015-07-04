@@ -46,6 +46,7 @@ var cssAsJson = {
     '.content-container': {
         'background': 'white',
         'border': '1px solid #e1e8ed',
+        'border-radius': 2,
         'overflow': 'hidden'
     },
     '.content-container > script': {
