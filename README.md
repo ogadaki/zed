@@ -7,7 +7,7 @@ still find usable?
 It combines expressivness of visual representation with hackability of text
 editing.
 
-Check the [demo](http://nnodot.github.io/zed/app.html).
+Check the [demo](http://ogadaki.github.io/zed/app.html).
 
 It is a quick and dirty proof of concept, numerous features are missing, some
 are buggy, others will be removed, etc.
